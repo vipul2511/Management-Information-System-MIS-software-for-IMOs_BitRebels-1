@@ -1,0 +1,64 @@
+{
+  "name": "information",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@react-pdf/renderer": "^1.6.9",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.5.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "aadhaar-validator": "^1.1.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3",
+    "clsx": "^1.1.0",
+    "firebase": "^7.14.2",
+    "firebase-admin": "^9.0.0",
+    "format-utils": "0.0.3",
+    "html2canvas": "^1.0.0-rc.5",
+    "js-file-download": "^0.4.12",
+    "jspdf": "^1.5.3",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-credit-card": "^0.20.0",
+    "react-dom": "^16.13.1",
+    "react-firebaseui": "^4.1.0",
+    "react-grid-gallery": "^0.5.5",
+    "react-icons": "^3.10.0",
+    "react-loader-spinner": "^3.1.14",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
+    "react-widgets": "^5.0.0-beta.16",
+    "react-youtube": "^7.11.2",
+    "recharts": "^1.8.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5000",
+  "secure": false
+}

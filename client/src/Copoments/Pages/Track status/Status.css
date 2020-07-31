@@ -1,0 +1,61 @@
+.WERT {
+    height: 100vh;
+    background-color: rgb(241,243,246);
+}
+.box1{
+   background-color: rgb(255,255,255);
+   height: 40%;
+   margin-top: 8vh;
+   margin-left: 3vh;
+   padding: 45px;
+   position: relative;
+   width: 190vh;
+}
+.text{
+    text-align: left;
+    white-space: pre-wrap;
+}
+.no{
+    padding-left: 15px;
+}
+.sidetext{
+    position: absolute;
+    top: 37px;
+    margin-left: 97vh;
+}
+.iconID{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    margin-left: 96vh;
+    top: 75px
+}
+.sidetext1{
+    position: absolute;
+    top: 79px;
+    margin-left: 102vh;
+    font-size: 15px;
+}
+.but{
+    position: absolute;
+    top: 73px;
+    margin-left: 128vh;
+    width: 20vh;
+}
+.but:hover{
+  background-color: #fff;
+  border-color: none;
+}
+.box2{
+    background-color: rgb(255,255,255);
+    margin-top: 4vh;
+    margin-left: 3vh;
+    padding: 4vh;
+    width: 190vh;
+ }
+ .text2{
+     margin-left: 46%;
+     margin-top: 14vh;
+     font-family: sans-serif;
+     font-size: 22px;
+ }

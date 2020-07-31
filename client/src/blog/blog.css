@@ -1,0 +1,123 @@
+.site-header {
+  background: rgb(72, 44, 191);
+  background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+  background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+  color: #ffffff;
+  padding: 100px 0 100px;
+}
+
+.site-header a {
+  color: #ffffff;
+}
+
+.white-color {
+  color: #ffffff !important;
+}
+
+.bread {
+  background: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0;
+}
+.section-padding-top {
+  padding-top: 120px;
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.post-single:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.post-single {
+  padding: 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.single-post .post-single .post-media {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.post-single.sticky .post-media {
+  width: 55%;
+  float: left;
+  margin-right: 60px;
+}
+
+.post-single .post-media {
+  overflow: hidden;
+  border-radius: 3px;
+ 
+}
+
+.post-single .post-media img {
+  width: 100%;
+}
+.post-single .post-body .post-meta .post-tags {
+  float: left;
+}
+.post-tags
+{
+  font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.text-color
+{
+  color: #757575;
+  
+}
+.post-single .post-body h4 {
+  padding-top: 3rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+ 
+}
+
+.post-single .post-body .read-more {
+  margin-top: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #768ede;
+}
+.arror
+{
+  font-family: 'Linearicons-Free';
+  margin-left: 5px;
+  color: #768ede;
+}
+.text-box
+{
+  padding-top: 9px;
+  font-size: 15px;
+  margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  
+
+}
+.text-box p{
+text-align: left;
+  justify-content: left;
+  line-height:1.8;}

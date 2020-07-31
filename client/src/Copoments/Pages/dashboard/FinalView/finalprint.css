@@ -1,0 +1,234 @@
+.main_loan
+{
+    align-items: center;
+    font-family: bold italic;
+}
+.loanDetailsLogo{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+.prt_btn{
+    background:red;
+    color: #fff;
+    width: 6em;
+    font-size: 18px;
+    float: right;
+    margin-right: 100px;
+    height: 2.4rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.prt_btn:hover{
+    color: #fff;
+}
+b{
+    color:black;
+    font-size: 17px;
+}
+.loanHead
+{
+    text-align: center;
+    color: black;
+}
+.tableID
+{
+    border-collapse:collapse;
+    margin-left: 4rem;
+    width: 90%;
+    border-width: 1px;
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 60%;
+  }
+  .modal-content-id {
+    /* background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 80%; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background: rgba(250,250,250,.5);
+        z-index: 25;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    margin-left: 55vh;
+    font-size: 28px;
+    font-weight: bold;
+  
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  * { box-sizing:border-box; }  
+  .group { 
+      position: relative; 
+      margin-top: 45px; 
+  }
+  
+  .inp {
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      -webkit-appearance: none;
+      display: block;
+      background: #fafafa;
+      color: #636363;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #757575;
+  }
+  
+  .inp:focus { outline: none; }
+  
+  
+  /* Label */
+  
+  
+  
+  /* active */
+  
+  .inp:focus ~ label, .inp.used ~ label {
+      top: -20px;
+    transform: scale(.75); left: -2px;
+      /* font-size: 14px; */
+      color: #4a89dc;
+  }
+  /* Underline */
+  
+  .bar {
+      position: relative;
+      display: block;
+      width: 100%;
+  }
+  
+  .bar:before, .bar:after {
+      content: '';
+      height: 2px; 
+      width: 0;
+      bottom: 1px; 
+      position: absolute;
+      background: #4a89dc; 
+      transition: all 0.2s ease;
+  }
+  
+  .bar:before { left: 50%; }
+  
+  .bar:after { right: 50%; }
+  
+  
+  /* active */
+  
+  .inp:focus ~ .bar:before, .inp:focus ~ .bar:after { width: 50%; }
+  
+  
+  /* Highlight */
+  
+  
+  
+  
+  /* active */
+  
+  .inp:focus ~ .highlight {
+      animation: inputHighlighter 0.3s ease;
+  }
+  
+  
+  /* Animations */
+  
+  @keyframes inputHighlighter {
+      from { background: #4a89dc; }
+      to 	{ width: 0; background: transparent; }
+  }
+  
+  /* Button */
+  
+  .buttonsss {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: .3em 0 1em 0;
+    width: 100%;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #3160B6;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .buttonsss:focus { outline: 0; }
+  
+  
+  /* Button modifiers */
+  
+  .buttonBlue {
+    background: #4a89dc;
+    text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+  }
+  
+  .buttonBlue:hover { background: #357bd8; }
+h6{
+    color: black;
+    font-size: 17.2px;
+}
+.backBtn{
+    background:#3ABAF1;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.backBtn:hover{
+    color: #fff;
+}
+.backCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td
+{
+    width:100px;
+    padding: 10px;
+    text-align: left;
+    border-width: 1px;
+}

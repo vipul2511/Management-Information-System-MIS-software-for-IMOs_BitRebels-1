@@ -1,0 +1,45 @@
+.Pay_card{
+    background-color: rgb(242, 246, 250);
+    height: 100vh;
+    
+}
+.detss {
+    
+    border: 2px solid rgb(236, 239, 244);
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    margin-top: 1vh;
+    font-family: sans-serif;
+    padding-left: 9px;
+    width: 30vh;
+    background-color: white;
+    transition: 1s;
+  }
+  .detss:focus {
+    border: 2px solid dodgerblue;
+  }
+  .Buttons {
+    font-weight: bold;
+    width: 209px;
+    margin-left: 34%;
+    margin-top: 2vh;
+    font-family: sans-serif;
+    transition: 1s;
+  }
+  .Button:hover {
+    background-color: seagreen;
+  }
+  .pay_form{
+    width: 80vh;
+	height: 92vh;
+	background-color: white;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+  }

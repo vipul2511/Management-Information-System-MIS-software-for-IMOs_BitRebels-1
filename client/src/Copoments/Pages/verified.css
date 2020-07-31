@@ -1,0 +1,61 @@
+.rbody{
+ margin-top:20vh;
+    background-color:#FAFBFF;
+    width: 90%;
+     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Rbody{
+    margin-top: 5vh;
+    background-color: #FAFBFF;
+    width: 90%;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cols {
+    padding: 20px;
+}
+.left{
+    text-align: left;
+
+}
+.btns {
+    background-color:#FAFBFF;
+  
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 15px;
+  color:dodgerblue;
+  border-color:#FAFBFF;
+  border-width: thin;
+  margin-top: 70px;
+  }
+  .btn:hover {
+    color: dodgerblue;
+  }
+  .img{
+      margin-left: 27px;
+  }
+  .text{
+      text-align: left;
+  }
+  .colo{
+      color: grey;
+  }
+  .icon{
+      color:grey;
+      text-align: left;
+  }
+    .cor{
+        color:green;
+    }
+.le{
+    margin-right:70px;
+}
+.corl{
+    color:orange;
+}
+.corlo{
+    color:red;
+}

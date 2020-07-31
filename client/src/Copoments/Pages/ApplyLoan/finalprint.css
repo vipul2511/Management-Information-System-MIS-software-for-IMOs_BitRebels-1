@@ -1,0 +1,67 @@
+.main_loan
+{
+    align-items: center;
+    font-family: bold italic;
+}
+.loanDetailsLogo{
+    width: 120px;
+    height: 100px;
+    text-align: center;
+}
+.prt_btn{
+    background:red;
+    color: #fff;
+    width: 6em;
+    font-size: 18px;
+    float: right;
+    margin-right: 100px;
+    height: 2.4rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.prt_btn:hover{
+    color: #fff;
+}
+b{
+    color:black;
+    font-size: 17px;
+}
+.loanHead
+{
+    text-align: center;
+    color: black;
+}
+.tableID
+{
+    border-collapse:collapse;
+    margin-left: 4rem;
+    width: 90%;
+    border-width: 1px;
+
+}
+h6{
+    color: black;
+    font-size: 17.2px;
+}
+.backBtn{
+    background:#3ABAF1;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.backBtn:hover{
+    color: #fff;
+}
+.backCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td
+{
+    width:100px;
+    padding: 10px;
+    text-align: left;
+    border-width: 1px;
+}

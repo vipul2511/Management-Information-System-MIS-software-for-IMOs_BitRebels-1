@@ -1,0 +1,31 @@
+{
+  "name": "information",
+  "version": "1.0.0",
+  "description": "Information System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Varshang Shrimali",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "firebase-admin": "^9.0.0",
+    "moment": "^2.27.0",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.2",
+    "stripe": "^8.53.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "twilio": "^3.48.1"
+  }
+}

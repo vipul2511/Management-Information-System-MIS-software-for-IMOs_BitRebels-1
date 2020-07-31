@@ -1,0 +1,42 @@
+.numeric {
+    text-align: end;
+  }
+  .display-4{
+    color: black;
+ margin-right: 4vw;
+  }
+  .earEMI {
+    background-color: #fff;
+  }
+  
+  .inputBox {
+    font-weight: bold;
+    width: 15%; 
+    position: absolute;
+
+  }
+  .active{
+    color: black;
+    font-weight: lighter;
+  }
+  .EMI_btn{
+    margin-left: 1vw;
+  }
+  .EMI_btn:hover{
+    color: #fff;
+  }
+  .main-flex {
+    display: flex;
+  }
+  
+  .main-data-picker,
+  .main-chart {
+    width: 50%;
+    margin-left: 10vh;
+  }
+  .main-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  

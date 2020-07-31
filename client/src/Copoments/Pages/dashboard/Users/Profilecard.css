@@ -1,0 +1,8 @@
+.profilecard {
+  margin-bottom: 4vh;
+}
+
+.profilecard:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 8px #888888;
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.392" height="83.5" viewBox="0 0 85.392 83.5">
+  <g id="Group_4128" data-name="Group 4128" transform="translate(-763.999 -2229)">
+    <path id="Path_2947" data-name="Path 2947" d="M25.771,2.986S-7.51,9.274,1.569,36.909s66.773,6.8,70.173-19.875S25.771,2.986,25.771,2.986Z" transform="translate(763.999 2259.985) rotate(-22)" fill="#edf2ff"/>
+    <g id="timer" transform="translate(780 2241.789)">
+      <path id="Path_2929" data-name="Path 2929" d="M205.964,11.312l-.052-9.056A2.257,2.257,0,0,1,208.169,0H217.2a2.257,2.257,0,0,1,2.257,2.257l.052,9.056a37.484,37.484,0,0,0-6.828-.738A35.482,35.482,0,0,0,205.964,11.312Z" transform="translate(-183.344)" fill="none" stroke="#50597b" stroke-width="3"/>
+      <path id="Path_2939" data-name="Path 2939" d="M192.833,4.514H174.778a2.257,2.257,0,1,1,0-4.514h18.055a2.257,2.257,0,0,1,0,4.514Z" transform="translate(-154.467)" fill="#ffb72e" stroke="#50597b" stroke-width="3"/>
+      <path id="Union_43" data-name="Union 43" d="M.661,10.623a2.257,2.257,0,0,1,0-3.192L7.432.661a2.257,2.257,0,0,1,3.192,3.191L8.8,5.672l2.265,2.354c.881.881-2.751,3.632-3.192,3.192L5.612,8.864,3.853,10.623a2.257,2.257,0,0,1-3.192,0Z" transform="translate(1.128 7.147)" fill="#ffb72e" stroke="#50597b" stroke-width="2"/>
+      <path id="Path_2933" data-name="Path 2933" d="M68.3,136.592a29.34,29.34,0,1,1,29.339-29.34A29.373,29.373,0,0,1,68.3,136.592Z" transform="translate(-38.957 -67.381)" fill="none" stroke="#50597b" stroke-width="3"/>
+      <path id="Path_2935" data-name="Path 2935" d="M126.051,185.32a20.312,20.312,0,1,1,20.312-20.312A20.335,20.335,0,0,1,126.051,185.32Z" transform="translate(-96.712 -125.136)" fill="#3b6bdd"/>
+      <path id="Path_2941" data-name="Path 2941" d="M250.588,225.018h-9.028a2.257,2.257,0,0,1-2.257-2.257v-9.028a2.257,2.257,0,1,1,4.514,0V220.5h6.771a2.257,2.257,0,0,1,0,4.514Z" transform="translate(-212.222 -182.89)" fill="#ffb72e"/>
+    </g>
+    <rect id="Rectangle_2660" data-name="Rectangle 2660" width="85" height="82" transform="translate(764 2229)" fill="#fff" opacity="0"/>
+  </g>
+</svg>

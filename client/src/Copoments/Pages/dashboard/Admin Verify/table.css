@@ -1,0 +1,17 @@
+.dropbutton{
+    width: 23vh;
+    font-size:18px;
+}
+.dropbutton:hover{
+    color: white;
+}
+.dropbutton2{
+    width: 23vh;
+    font-size:18px;
+}
+.dropbutton2:hover{
+    color: white;
+}
+.pend:hover{
+    color: white;
+}

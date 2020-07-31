@@ -1,0 +1,222 @@
+.section_img{
+ margin-top: 13vh;
+ width: 100%;
+}
+.Carousel-RMK{
+    height: 50%;
+}
+.RMK-img{
+    height: 90vh;
+    width: 100vw;
+}
+.section-video{
+    margin-top: 2vh;
+   
+}
+h1,h2{
+    color: #6b6b6b;
+    text-align: center;
+    font-family: "Lato","Avenir W01",Helvetica,Arial,sans-serif;
+    margin: .67em 0;
+    font-size: 36px !important;
+  }
+ 
+  .para{
+    color: #8a8a8a;
+    text-align: center;
+    font-family: "Lato","Avenir W01",Helvetica,Arial,sans-serif;  
+    margin: 0 0 20px; 
+  }
+  .video_h1{
+    margin-top: 2vh;
+  }
+  .video_h2{
+    font-weight: 300 !important;  
+  }
+  .video_p{
+    font-weight: 300 !important; 
+    font-size: 22px !important;
+    display: block;
+    max-width: 800px;
+    margin-left: 7vh;
+  }
+  .RMK-video{
+      margin-top: 5vh;
+      margin-left: 25rem;
+  }
+  .introRMK{
+      color: #3c374d;
+  }
+  .AboutRMK{
+      margin-top: 4vh;
+      background-color: #FAFBFF;
+  }
+  .features{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .Personalised{
+      display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #3c374d; 
+  }
+ .PersonalP{
+     font-size: 18px;
+     margin-left: 4.8vw;
+     text-align: left;
+ }
+ .AboutRMKUS{
+     justify-content: center;
+     align-self: center;
+    line-height: 2.2rem;
+ }
+ .MFWCD{
+     margin-top: 2vh;
+     background-image: url("../Images/links-bg.jpg");
+ }
+ .headingMFWCD{
+     margin-top: 3vh;
+     text-align: center;
+     color: white;
+ }
+ .MFCH-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+ }
+ .linkImg{
+    width: 7vw;
+    height: auto;
+ }
+ .CARAImg{
+     width: 5vw;
+     height: auto;
+ }
+ .cswb{
+     width: 8vw;
+     height: auto;
+   
+ }
+ .National{
+     width: 5vw;
+     height: auto;
+    
+ }
+ .nipccd{
+     width: 10vw;
+     height: auto;
+
+ }
+ .ImagesLogo{
+ margin-left: 18rem;
+ }
+ .Imagemargin{
+     margin-left: 8vw;
+ }
+ .footer{
+     margin-top:5vh;
+ 
+
+ }
+ .Contact-US{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #8790af;
+    font-weight: 600;
+    text-align: center;
+ }
+ .Contact-US::before{
+    content: '';
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    background-color: #e1e1e1;
+    margin: 0 15px;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+ }
+ .Contact-US::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    background-color: #e1e1e1;
+    margin: 0 15px;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+ }
+ .darkColor{
+    color: #434345;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+ }
+ .Icon{
+    font-family: 'Linearicons-Free';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-size: 25px;
+  margin-bottom: 1vh;
+ }
+
+ 
+ .Div-Style{
+    width: 75px;
+    height: 75px;
+    margin: auto auto 30px auto;
+    text-align: center;
+    line-height: 75px;
+    color: #ffffff;
+    font-size: 20px;
+    background: rgb(72, 44, 191);
+    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+ }
+ .Div-Style::before{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+ }
+ .footer-box:hover .Div-Style {
+    color: #5e88fc;
+}
+.footer-box:hover .Div-Style:before {
+    background-color: #ffffff;
+}
+.Address{
+    color: #8790AF;
+    font-size: 16px;
+    line-height: 25px;
+}
+.Phone{
+    text-align: center;
+}
