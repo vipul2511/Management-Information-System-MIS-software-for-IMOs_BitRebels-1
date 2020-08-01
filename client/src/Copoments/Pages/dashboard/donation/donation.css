@@ -101,7 +101,7 @@ a:hover {
   margin-bottom: 15px;
 }
 .slider-height {
-  height: 920px;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -259,7 +259,7 @@ a:hover {
   padding: 20px;
   border: 1px solid #888;
   width: 40%;
-  height: 90%;
+  height: 90vh;
 }
 
 /* The Close Button */
@@ -318,7 +318,7 @@ a:hover {
 	position: absolute;
 	pointer-events: none;
 	left: 5px;
-	top: 10px;
+	top: -20px;
 	transition: all 0.2s ease;
 }
 
@@ -326,7 +326,7 @@ a:hover {
 /* active */
 
 .inp:focus ~ label, .inp.used ~ label {
-	top: -20px;
+
   transform: scale(.75); left: -2px;
 	/* font-size: 14px; */
 	color: #4a89dc;

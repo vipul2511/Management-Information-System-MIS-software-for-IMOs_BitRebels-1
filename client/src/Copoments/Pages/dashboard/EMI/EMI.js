@@ -24,6 +24,7 @@ export default class EMI extends React.Component {
     super(props);
   this.state={
     EMIData:null,
+    phone:null,
     newUrlobj:'',
     loaded:false,
     loanAmount:null,
@@ -43,8 +44,9 @@ export default class EMI extends React.Component {
     firebase.database().ref('users/').child('Admin/'+userID).set(status).then(succ =>{
     firebase.database().ref('users/').child('EMI/'+userID).set(this.state.EMIData).then(succ=>{
       firebase.database().ref('users/Application/'+userID).remove().then(succ=>{
-      window.location.href="/Repay";
-    });
+        window.location.href="/Repay";
+      });
+     
     });
   });
   }
@@ -74,10 +76,16 @@ export default class EMI extends React.Component {
     const emi = Math.ceil(
       loanAmount * roi * (rateVariable / (rateVariable - 1))
     );
-
+    let userID= localStorage.getItem('UserID');
+    console.log(userID);
+    let userNumber;
+    firebase.database().ref('users/Application/'+userID).once("value",function(snapshot){
+      userNumber=snapshot.val().finalData.Phone;
+      console.log(userNumber);
+      this.setState({phone:userNumber});
+    }.bind(this));
      this.setState({emiAmount:AMOUNT_FORMAT.format(emi)})
      this.setState({numberOFPayments:nom})
-
      let emiDate = new Date(loanStartDate);
     let beginningBalance = loanAmount;
     let principle = loanAmount;
@@ -102,6 +110,7 @@ export default class EMI extends React.Component {
         emi_number: i,
         payment_date: DATE_FORMAT.format(emiDate),
         beginning_balance: AMOUNT_FORMAT.format(beginningBalance),
+        phone:this.state.phone,
         scheduled_payment: AMOUNT_FORMAT.format(emiForThisInstallment),
         total_payment: AMOUNT_FORMAT.format(totalPayment),
         principle: AMOUNT_FORMAT.format(emiForThisInstallment - interest),
@@ -132,8 +141,7 @@ export default class EMI extends React.Component {
     const amortTableBody = document.getElementById("amort_table tbody");
     if (amortSchedule.length > 0) {
       amortTable.style.display = "block";
-     this.setState({EMIData:amortSchedule})
-     
+     this.setState({EMIData:amortSchedule});
       var tableBody = "";
       amortSchedule.forEach((schedule, index) => {
         tableBody += "<tr>";
