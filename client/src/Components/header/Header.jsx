@@ -40,7 +40,7 @@ import firebase from '../../firebase SDK/firebase';
   <Link to="/Gallery">Gallery </Link>
   <Link to="/DonationPayment">Donation</Link>
   <Link to="/blog">Success Stories</Link>
-{user ?  <button class="btn btn_order shadow_btn" type="submit" onClick={ApplyLoan}>Apply Loan</button>:<button className="btn btn1 shadow_btn" type="submit" onClick={login}>Log In</button>}
+{user ?  <button class="btn btn_ordered shadow_btn" type="submit" onClick={ApplyLoan}>Apply Loan</button>:<button className="btn btn1 shadow_btn" type="submit" onClick={login}>Log In</button>}
   {user?
     <button className="btn btn1 shadow_btn" type="submit" onClick={logout}>Log out</button>:null
   }
