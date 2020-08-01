@@ -1,0 +1,135 @@
+.topnav {
+  overflow: hidden;
+  float: right;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(105, 105, 105);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  text-decoration: none;
+  color: #3abaf1;
+}
+.stickys {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  margin: auto;
+  top: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.shadow_btn {
+  font-weight: bold;
+  margin-top: -4px;
+}
+button.btn1 {
+  height: 6vh;
+  width: 20vh;
+  background: #3abaf1;
+  color: #ffffff;
+  border-color: #3abaf1;
+  margin-top: 4px;
+  margin-left: 5vh;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 100;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+button.btn1:hover,
+button.btn1:active,
+button.btn1:focus,
+button.btn1.active {
+  color: #3abaf1;
+  background-color: #ffffff;
+  border-color: #3abaf1;
+}
+.img-logo {
+  width: 60px;
+  margin-left: 5vh;
+}
+button.btn_order {
+  height: 6vh;
+  background: #ff9001;
+  color: #ffffff;
+  border-color: #ff9001;
+  margin-top: 4px;
+  margin-left: 44vh;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 100;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+button.btn_order:hover,
+button.btn_order:active,
+button.btn_order:focus,
+button.btn_order.active {
+  color: #ff9001;
+  background-color: #ffffff;
+  border-color: #ff9001;
+}
+.navlink{
+  margin-right: 4vh;
+  transition: 0.3s;
+  height: 10vh;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navlink:hover{
+  margin-right: 4vh;
+  text-decoration: none;
+  color: #ff9001;
+}
+@media screen and (max-width: 360px) {
+  button.btn_order {
+    height: 6vh;
+    background: #ff9001;
+    color: #ffffff;
+    border-color: #ff9001;
+    margin-top: 4px;
+    margin-left: 0vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 100;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+  button.btn1 {
+    height: 6vh;
+    width: 52vh;
+    background: #3abaf1;
+    color: #ffffff;
+    border-color: #3abaf1;
+    margin-top: 4px;
+    margin-left: 0;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 100;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+}
