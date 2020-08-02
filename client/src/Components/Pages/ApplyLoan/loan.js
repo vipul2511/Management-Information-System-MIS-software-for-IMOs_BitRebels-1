@@ -114,12 +114,12 @@ class Loan extends Component {
     return (
       <div className="loanTp">
       <Header />
-      <Container fluid style={{height:'110vh',backgroundColor:'rgb(242, 246, 250)'}} >
+      <Container fluid  style={{height:'110vh',backgroundColor:'rgb(242, 246, 250)'}} >
         <Row>
           <Col md={12}>
             <div className="sec2">
-              <h1>Get Your Loan Report & Score Now</h1>
-              <h3 className="h3head">With Loan analysis and monthly updates</h3>
+              <h1>Fill Your Details</h1>
+              <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
               <div className="error" style={{marginTop:'3vh'}}>{this.state.accountError}</div>
               <input
