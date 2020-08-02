@@ -8,6 +8,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 import firebase from "../../firebase SDK/firebase";
 
@@ -49,9 +50,7 @@ class Home extends Component {
                 src={this.state.ImagesUrl[0]}
                 alt="First slide"
               />
-              <Carousel.Caption>
-                <h4>First slide label</h4>
-              </Carousel.Caption>
+              <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -60,9 +59,7 @@ class Home extends Component {
                 alt="Third slide"
               />
 
-              <Carousel.Caption>
-                <h4>Second slide label</h4>
-              </Carousel.Caption>
+              <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -70,10 +67,7 @@ class Home extends Component {
                 src={this.state.ImagesUrl[2]}
                 alt="Third slide"
               />
-
-              <Carousel.Caption>
-                <h4>Third slide label</h4>
-              </Carousel.Caption>
+              <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </section>
@@ -91,9 +85,9 @@ class Home extends Component {
                   augment their capacities through multi-pronged efforts.
                 </p>
               </Col>
-              <Col >
+              <Col>
                 <YouTube
-                className="RMK-video"
+                  className="RMK-video"
                   videoId="mNKbcp8dmiQ"
                   opts={opts}
                   onReady={this._onReady}
@@ -102,6 +96,15 @@ class Home extends Component {
             </Row>
           </Container>
         </section>
+        <div class="sticky-social">
+          <ul class="social">
+            <li class="fb">
+              <a href="https://chat.whatsapp.com/Dr9dgZSkRkQ9vcm0HOrMXM">
+              <i class="fab fa-whatsapp" style={{ color: "white"}}><WhatsAppIcon style={{height: "28px", width: "28px"}}/></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         <section className="AboutRMK">
           <Container className="AboutRMKUS1">
             <Row>
@@ -109,7 +112,9 @@ class Home extends Component {
                 <h1 style={{ fontWeight: "bold" }} className="introRMK">
                   Why RMK?
                 </h1>
-                <p style={{ fontSize: 18, textAlign: "left", color: "#8a8a8a" }}>
+                <p
+                  style={{ fontSize: 18, textAlign: "left", color: "#8a8a8a" }}
+                >
                   Rashtriya Mahila Kosh (RMK) was established by the Government
                   of India in March, 1993 as an autonomous body under the
                   Ministry of Women & Child Development. It was registered under
@@ -143,7 +148,7 @@ class Home extends Component {
                 </div>
                 <div className="features text-center">
                   <img
-                   className="homepageicon"
+                    className="homepageicon"
                     style={{ marginLeft: "4rem", marginTop: "3rem" }}
                     src={require("../Images/fast-disbursals.svg")}
                     alt="Personal"

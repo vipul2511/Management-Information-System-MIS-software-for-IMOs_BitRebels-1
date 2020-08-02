@@ -218,6 +218,40 @@ h1,h2{
 .AboutRMKUS1 {
     height: 85vh;
 }
+.sticky-social{
+    position:fixed;
+    top:50vh;
+    left:189vh;
+    width: 39vh;
+    padding:0px;
+    margin:0px;
+    transition: 1s;
+    z-index: 1;
+  }
+  .sticky-social:hover{
+    position:fixed;
+    top:50vh;
+    left:185vh;
+    width: 49vh;
+    padding:0px;
+    margin:0px;
+    transition: 1s;
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:10px 10px;
+    transition:all 0.8s ease-in-out;
+  }
+  .fa{
+    color:#fff;
+    transition:all 0.8s ease-in-out;
+  }
+  .fb{
+    background-color:green;
+  }
+  
 body{
     font-family: sans-serif;
 }
