@@ -44,11 +44,18 @@ import AdminGallery from './Components/Pages/dashboard/Gallery/AdminGallery';
 import ProtectedRoute from './Components/Pages/ProtectedRoute/ProtectedRoute';
 import AdminSignIn from './Components/Pages/dashboard/Sign/SignIn';
 import NGO from './Components/Pages/NGO/ngo';
+import NGOdetails from './Components/Pages/NGO/ngodetails';
+import NGOloan from './Components/Pages/NGO/ngoloan';
+import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin'
+
 function App() {
   return (
     <BrowserRouter>
     <Switch>
-    <Route path="/NGO" component={NGO} />
+    <Route path="/Ngo" component={NGO} />
+    <Route path="/Ngodetails" component={NGOdetails} />
+    <Route path="/Ngoloan" component={NGOloan} />
+      <Route path="/NGORepayAdmin" component={NGORepayAdmin} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
       <Route path="/firebase" component={FirebaseTest}/>

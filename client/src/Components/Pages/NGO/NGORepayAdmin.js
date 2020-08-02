@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import "./RepayAdmin.css";
+import "./NGORepayAdmin.css";
 import Button from "react-bootstrap/Button";
-import { mainListItems, secondaryListItems } from './listItems';
+import { mainListItems, secondaryListItems } from './NGOlistItems';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -20,8 +20,8 @@ import Badge from '@material-ui/core/Badge';
 import Card from "react-bootstrap/Card";
 import Pic from "./profile.jpeg";
 import { Table } from "react-bootstrap";
-import "./verification.css";
-import AdminVerified from './verification';
+import "./NGOverification.css";
+import AdminVerified from './NGOverification';
 
 const drawerWidth = 240;
 
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function RepayAdmin() {
+function NGORepayAdmin() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -128,7 +128,7 @@ function RepayAdmin() {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Verification Dashboard
+            NGO Dashboard
           </Typography>
           <IconButton color="inherit">
           </IconButton>
@@ -169,4 +169,4 @@ function RepayAdmin() {
     );
 
 }
-export default RepayAdmin;
+export default NGORepayAdmin;
