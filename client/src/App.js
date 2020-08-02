@@ -26,7 +26,6 @@ import SMSForm from './Components/Pages/sms';
 import PersonDetails from './Components/Pages/dashboard/Admin Verify/table';
 import EMI from './Components/Pages/dashboard/EMI/EMI';
 import Profilecard from './Components/Pages/dashboard/Users/Profilecard';
-import Donation from './Components/Pages/dashboard/donation/donation';
 import DonationPayment from './Components/Pages/dashboard/donation/Basicpayment';
 import blog from './blog/blog';
 import singleandnick from './blog/single';
@@ -46,11 +45,13 @@ import FinalView from './Components/Pages/dashboard/FinalView/finalprint';
 import AdminGallery from './Components/Pages/dashboard/Gallery/AdminGallery';
 import ProtectedRoute from './Components/Pages/ProtectedRoute/ProtectedRoute';
 import AdminSignIn from './Components/Pages/dashboard/Sign/SignIn';
+import ngo from './Components/Pages/NGO/ngo';
 
 function App() {
   return (
     <BrowserRouter>
     <Switch>
+    <Route path="/Ngo" component={ngo} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
       <Route path="/firebase" component={FirebaseTest}/>
@@ -72,7 +73,6 @@ function App() {
       <Route path="/AdminDetails" component={PersonDetails}/>
       <Route path="/EMI" component={EMI}/>
       <Route path="/Profile" component={Profilecard}/>
-      <Route path="/Donation" component={Donation}/>
       <Route exact path="/SignIn" component={SignIn} />
       <Route path="/DonationPayment" component={DonationPayment}   />
       <Route path="/blog" component={blog}/>

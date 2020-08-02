@@ -165,7 +165,7 @@ hr {
 }
 
 .sec2{
-  margin-top: 13vh;
+  margin-top: 3vh;
   font-family: sans-serif;
   border: 0;
   margin-left: 22%;
@@ -194,7 +194,7 @@ hr {
   background-color: #007BFF;
   padding: 8px 20px;
   border-radius: 5px;
-  font-size: 17px;
+  font-size: 21px;
   width: 31vh;
   height: 6vh;
 }
@@ -215,7 +215,7 @@ hr {
     font-size: 15px; 
 } 
 .sec4{
-  margin-top: 15vh;
+  margin-top: 4vh;
 }
 .Cont {
   position: relative;
@@ -234,7 +234,7 @@ hr {
 }
 
 .input-fileData{
-  width: 15.6vh;
+  width: 14vh;
     margin-top: 25vh;
     margin-left: 2vh;
   color: gray;

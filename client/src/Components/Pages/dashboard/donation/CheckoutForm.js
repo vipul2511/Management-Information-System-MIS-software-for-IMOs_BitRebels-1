@@ -21,33 +21,31 @@ class CheckoutForm extends React.Component {
     openModel=()=>{
         var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
+      
         var btn = document.getElementById("myBtn");
         
-        // Get the <span> element that closes the modal
+     
         var span = document.getElementsByClassName("close")[0];
         
-        // When the user clicks the button, open the modal 
+      
         btn.onclick = function() {
           modal.style.display = "block";
         }
         
-        // When the user clicks on <span> (x), close the modal
+        
         span.onclick = function() {
           modal.style.display = "none";
         }
     }
  
   handleSubmit = async (event) => {
-    // We don't want to let default form submission happen here,
-    // which would refresh the page.
+   
     event.preventDefault();
 
     const {stripe, elements} = this.props
 console.log(this.props);
     if (!stripe || !elements) {
-      // Stripe.js has not yet loaded.
-      // Make  sure to disable form submission until Stripe.js has loaded.
+     
       return;
     }
      
@@ -58,24 +56,21 @@ console.log(this.props);
       type: 'card',
       card: elements.getElement(CardElement),
       billing_details: {
-        // Include any additional collected billing details.
+        
         name: 'Varshang Shrimali',
       },
     });
 
     if (result.error) {
-      // Show error to your customer.
+     
       console.log(result.error.message);
     } else {
 
-      
-      // Send the token to your server.
-      // This function does not exist yet; we will define it in the next step.
+     
       stripeTokenHandler(result);
       console.log(result);
      async function stripeTokenHandler (token) {
-        // Use fetch to send the token ID and any other payment data to your server.
-        // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+       
        let BodyData={
           payment_method_id: result.paymentMethod.id,
           amount:Amount
@@ -87,7 +82,7 @@ console.log(this.props);
               'Content-type': 'application/json; charset=UTF-8'
             },
           }).then(function(response) {
-            // Handle server response (see Step 4)
+            
             response.json().then( async function(ResponseJson) {
       let clientSecret = ResponseJson.clientSecret;
       const confirmCardPayment = await stripe.confirmCardPayment(clientSecret).then(function(response){
@@ -100,10 +95,7 @@ console.log(this.props);
           console.log(confirmCardPayment);
             })   
           });
-      
-       
-      
-        // Return and display the result of the charge.
+  
        
       }
       
