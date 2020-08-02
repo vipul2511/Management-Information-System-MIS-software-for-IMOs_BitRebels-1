@@ -4,8 +4,6 @@ import Button from "react-bootstrap/Button";
 import CardSection from './CardSection';
 import './CheckoutForm.css';
 import "./donation.css";
-
-
 class CheckoutForm extends React.Component {
    constructor(props){
      super(props);
@@ -101,10 +99,6 @@ console.log(this.props);
             })   
           });
       
-       
-      
-        // Return and display the result of the charge.
-       
       }
       
     }
@@ -142,10 +136,7 @@ console.log(this.props);
 </div>
     </div>
     <div className="modelAVC">
-   
-    
     <div id="myModal" className="modal">
-    
       <div className="modal-content">
         <span className="close">&times;</span>
        <div className="detail">Enter Details</div>

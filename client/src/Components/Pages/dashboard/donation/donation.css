@@ -199,7 +199,6 @@ a:hover {
   text-transform: uppercase;
   display: inline-block;
 }
-
 @media (max-width: 575px) {
   .slider-area .hero__caption span {
     margin-bottom: 30px;
@@ -251,26 +250,22 @@ a:hover {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 40%;
-  height: 90vh;
+  width: 50%;
+  height: 90%;
 }
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
   margin-left: 75vh;
   font-size: 28px;
   font-weight: bold;
-
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -283,16 +278,12 @@ a:hover {
 	font-family: Helvetica;
 	background: #eee;
   -webkit-font-smoothing: antialiased;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 .group { 
 	position: relative; 
 	margin-top: 45px; 
 }
-
 .inp {
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
@@ -331,16 +322,11 @@ a:hover {
 	/* font-size: 14px; */
 	color: #4a89dc;
 }
-
-
-/* Underline */
-
 .bar {
 	position: relative;
 	display: block;
 	width: 100%;
 }
-
 .bar:before, .bar:after {
 	content: '';
 	height: 2px; 
@@ -359,14 +345,6 @@ a:hover {
 /* active */
 
 .inp:focus ~ .bar:before, .inp:focus ~ .bar:after { width: 50%; }
-
-
-/* Highlight */
-
-
-
-
-/* active */
 
 .inp:focus ~ .highlight {
 	animation: inputHighlighter 0.3s ease;
@@ -389,9 +367,6 @@ a:hover {
   text-align: center;
 
 }
-
-/* Button */
-
 .buttonsss {
   position: relative;
   display: inline-block;

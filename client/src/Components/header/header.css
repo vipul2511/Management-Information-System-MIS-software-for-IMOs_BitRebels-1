@@ -24,12 +24,10 @@
     overflow: hidden;
     margin: auto;
       top: 0;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-    
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2); 
   }
   .shadow_btn{
     box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.1);
-   
   }
   button.btn1{
     height: 5vh;

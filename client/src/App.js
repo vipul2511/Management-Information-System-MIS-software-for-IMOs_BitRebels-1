@@ -26,7 +26,6 @@ import SMSForm from './Copoments/Pages/sms';
 import PersonDetails from './Copoments/Pages/dashboard/Admin Verify/table';
 import EMI from './Copoments/Pages/dashboard/EMI/EMI';
 import Profilecard from './Copoments/Pages/dashboard/Users/Profilecard';
-import Donation from './Copoments/Pages/dashboard/donation/donation';
 import DonationPayment from './Copoments/Pages/dashboard/donation/Basicpayment';
 import blog from './blog/blog';
 import singleandnick from './blog/single';
@@ -72,7 +71,6 @@ function App() {
       <Route path="/AdminDetails" component={PersonDetails}/>
       <Route path="/EMI" component={EMI}/>
       <Route path="/Profile" component={Profilecard}/>
-      <Route path="/Donation" component={Donation}/>
       <Route exact path="/SignIn" component={SignIn} />
       <Route path="/DonationPayment" component={DonationPayment}   />
       <Route path="/blog" component={blog}/>

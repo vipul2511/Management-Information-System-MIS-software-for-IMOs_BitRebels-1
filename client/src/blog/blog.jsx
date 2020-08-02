@@ -7,13 +7,12 @@ import {Link} from "react-router-dom";
 class blog extends Component{
  render(){
     return(
-       
         <div className="App">
        <header className="site-header">
         <div className="container">
             <div className="row">
             <Col xs={12}  className="text-center">
-                <h1 className="white-color">Out Latest Blog</h1>
+                <h1 className="white-color">Our Latest Success Story</h1>
                  <div className="bread">
                  <p className="white-color"><Link to="index.html" style={{textDecoration:'none', color: "white"}}>Home</Link> / Blog</p>
                   </div>

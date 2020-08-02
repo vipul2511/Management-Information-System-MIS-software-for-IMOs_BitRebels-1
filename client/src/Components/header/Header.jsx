@@ -28,10 +28,9 @@ import firebase from '../../firebase SDK/firebase';
    function ApplyLoan(){
      window.location.href="/ApplyLoan"
    }
-   
     return (
      <div  >
-    <Navbar className="stickys"    bg="white" variant="light">
+    <Navbar className="stickys" bg="white" variant="light">
     <Navbar.Brand href="#home"><img src={require('../Images/download.jfif')} alt="logo" className="img-logo"/></Navbar.Brand>
     <Nav className="ml-auto">
     <div className="topnav ">
