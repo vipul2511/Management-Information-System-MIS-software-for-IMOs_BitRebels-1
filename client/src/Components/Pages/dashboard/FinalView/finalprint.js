@@ -144,8 +144,8 @@ this.setState({message: event.target.value})
      </div>
      <div>
      <div className="modelAVC">
-    <div id="myModal" className="modal">
-      <div className="modal-content">
+    <div id="myModal" className="modal2">
+      <div className="modal-contentfinal">
         <span className="close">&times;</span>
        <div className="detail">Reason/Feedback</div>
        <div>
@@ -162,7 +162,7 @@ this.setState({message: event.target.value})
     <div className="modelAVC">
     <div id="myModalID" className="modal">
       <div className="modal-content-id">
-        <span className="closed close">&times;</span>
+        <span className="closed close1">&times;</span>
        <div>
         <div className="group">
           </div>

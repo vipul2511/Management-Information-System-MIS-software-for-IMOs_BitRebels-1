@@ -39,7 +39,7 @@ b{
     border-width: 1px;
 
 }
-.modal {
+.modal2 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -54,7 +54,7 @@ b{
   }
   
   /* Modal Content */
-  .modal-content {
+  .modal-contentfinal{
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -79,7 +79,7 @@ b{
   }
   
   /* The Close Button */
-  .close {
+  .close1 {
     color: #aaaaaa;
     margin-left: 55vh;
     font-size: 28px;
@@ -87,8 +87,8 @@ b{
   
   }
   
-  .close:hover,
-  .close:focus {
+  .close1:hover,
+  .close1:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

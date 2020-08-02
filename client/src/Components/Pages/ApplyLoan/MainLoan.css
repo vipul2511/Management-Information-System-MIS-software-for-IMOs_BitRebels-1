@@ -33,16 +33,16 @@ hr {
 }
 ::placeholder {
   color: rgb(150, 168, 201);
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+
   color: rgb(150, 168, 201);
 }
 
 ::-ms-input-placeholder {
-  /* Microsoft Edge */
+
   color: rgb(150, 168, 201);
 }
 .gender {
@@ -78,34 +78,37 @@ hr {
   background-color: transparent;
   transition: 1s;
 }
-/* .det:focus {
-  border: 2px solid dodgerblue;
-} */
+
 .option {
   margin-left: 1vh;
   font-family: sans-serif;
   color: rgb(150, 168, 201);
-  padding: 2px;
+  padding: 4px;
   border-radius: 5px;
   font-weight: bold;
+ 
+
 }
+
 .optionhead {
   margin-left: 29%;
   color: rgb(150, 168, 201);
   border: 0;
   border-radius: 7px;
   padding: 2px;
+  ;
 }
-/* .Button {
-  font-weight: bold;
-  width: 209px;
 
-  margin-top: 2vh;
-  font-family: sans-serif;
-  transition: 1s;
-} */
-.Button:hover {
+.button{
+  width: 30vh;
+  margin-left: 45.5vh;
+ 
+  font-size: 20px;
+  
+}
+.button:hover {
   background-color: seagreen;
+
 }
 .loanTp{
   margin-top: 4vh;
@@ -128,7 +131,7 @@ hr {
 }
 .headss {
   background-color:rgb(242, 246, 250);
-  height: 120vh;
+  height: 700px;
 }
 
 
@@ -148,7 +151,7 @@ hr {
 
 
 .top_mar{
-  margin-top: 12vh;
+  margin-top: 1.1vh;
 }
 .upload {
   position: relative;
@@ -162,7 +165,7 @@ hr {
 }
 
 .sec2{
-  margin-top: 13vh;
+  margin-top: 3vh;
   font-family: sans-serif;
   border: 0;
   margin-left: 22%;
@@ -184,21 +187,6 @@ hr {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-/* .btn {
-  margin-left: 45vh;
-  margin-top: 2vh;
-  border: 2px solid gray;
-  color: white;
-  background-color: #007BFF;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 17px;
-
-  width: 31vh;
-  height: 6vh;
-} */
 .btnClass{
   margin-left: 45vh;
   margin-top: 5vh;
@@ -206,7 +194,7 @@ hr {
   background-color: #007BFF;
   padding: 8px 20px;
   border-radius: 5px;
-  font-size: 17px;
+  font-size: 21px;
   width: 31vh;
   height: 6vh;
 }
@@ -227,7 +215,7 @@ hr {
     font-size: 15px; 
 } 
 .sec4{
-  margin-top: 15vh;
+  margin-top: 4vh;
 }
 .Cont {
   position: relative;
@@ -245,32 +233,80 @@ hr {
 
 }
 
- /* .btnID {
-  border: 2px solid gray;
-  color: gray;
-  background-color: white;
-  padding: 5px 15px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: bold;
-
-} */
 .input-fileData{
   width: 14vh;
     margin-top: 25vh;
     margin-left: 2vh;
-  /* border: 2px solid gray; */
   color: gray;
   background-color: rgb(229,229,229);
-  /* border-radius: 8px; */
   font-size: 15px;
   font-weight: bold;
 }
 
  .upload-btn-wrapper {
-  /* font-size: 100px; */
 
   position: absolute;
-  /* top: 0;
-  opacity: 0; */
+ 
+}
+
+
+
+@media screen and (max-width: 360px) {
+ .col{
+   width: 6vh;
+   margin-right: 3vh;
+
+ }
+ .drop{
+   margin-left: 9vh;
+   margin-top: 30vh;
+
+ }
+ .det{
+   margin-left:6vh;
+   width: 36vh;
+ }
+ .input-fileData{
+   width: 16vh;
+   margin-right: 20vh;
+ }
+ .upload-btn-wrapper{
+   margin-left: 2vh;
+  
+ }
+ 
+ .labe{
+   margin-left: 9vh;
+ }
+ .genderbtn2{
+  margin-left: 20.5vh;
+}
+.addss{
+  height: 13vw;
+}
+.button{
+  width: 30vh;
+  margin-left: 9vh;
+}
+.opt{
+  width: 14vh;
+  }
+  .option{
+    margin-left: 0vh;
+  }
+.headss{
+  height: 148vh;
+}
+.sec2{
+  width: 46vh;
+  margin-left: 2vh;
+  height: 110vh;
+  margin-top: 8vh;
+}
+.btnClass{
+  margin-left: 9vh;
+}
+.loanTp{
+  height: 135vh;
+}
 }

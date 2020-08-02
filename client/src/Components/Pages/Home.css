@@ -1,5 +1,4 @@
 .section_img{
- margin-top: 13vh;
  width: 100%;
 }
 .Carousel-RMK{
@@ -17,13 +16,12 @@ h1,h2{
     color: #6b6b6b;
     text-align: center;
     font-family: "Lato","Avenir W01",Helvetica,Arial,sans-serif;
-    margin: .67em 0;
     font-size: 36px !important;
+    font-weight: bold;
   }
  
-  .para{
+  .video_p{
     color: #8a8a8a;
-    text-align: center;
     font-family: "Lato","Avenir W01",Helvetica,Arial,sans-serif;  
     margin: 0 0 20px; 
   }
@@ -40,15 +38,12 @@ h1,h2{
     max-width: 800px;
     margin-left: 7vh;
   }
-  .RMK-video{
-      margin-top: 5vh;
-      margin-left: 25rem;
-  }
+ 
   .introRMK{
       color: #3c374d;
   }
   .AboutRMK{
-      margin-top: 4vh;
+      margin-top: 0vh;
       background-color: #FAFBFF;
   }
   .features{
@@ -74,7 +69,7 @@ h1,h2{
     line-height: 2.2rem;
  }
  .MFWCD{
-     margin-top: 2vh;
+     margin-top: -3vh;
      background-image: url("../Images/links-bg.jpg");
  }
  .headingMFWCD{
@@ -220,3 +215,77 @@ h1,h2{
 .Phone{
     text-align: center;
 }
+.AboutRMKUS1 {
+    height: 85vh;
+}
+.sticky-social{
+    position:fixed;
+    top:50vh;
+    left:189vh;
+    width: 39vh;
+    padding:0px;
+    margin:0px;
+    transition: 1s;
+    z-index: 1;
+  }
+  .sticky-social:hover{
+    position:fixed;
+    top:50vh;
+    left:185vh;
+    width: 49vh;
+    padding:0px;
+    margin:0px;
+    transition: 1s;
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:10px 10px;
+    transition:all 0.8s ease-in-out;
+  }
+  .fa{
+    color:#fff;
+    transition:all 0.8s ease-in-out;
+  }
+  .fb{
+    background-color:green;
+  }
+  
+body{
+    font-family: sans-serif;
+}
+@media screen and (max-width: 360px) {
+    .homepageicon{
+      position: absolute;
+      left: -52px;
+      height: 11vh;
+      width: 11vh;
+    }
+    .MFWCD{
+        margin-top: -3vh;
+    }
+    .RMKIntro-Div{
+        margin-left: 9vh;
+    }
+    .Personalised{
+        font-size: 25px;
+    }
+    .ImagesLogo{
+        margin-left: 10vh;
+    }
+    body{
+        width: 56vh;
+    }
+    .video_p {
+        width: 45vh;
+        text-align: left;
+    }
+    .RMK-video{
+        width: 53vh;
+        height: 35vh;
+    }
+    .AboutRMKUS1{
+        height: 150vh;
+    }
+  }

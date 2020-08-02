@@ -3,30 +3,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import ReactDOM from "react-dom";
 
-import Home from './Copoments/Pages/Home';
-import FirebaseTest from './Copoments/Pages/firebaseTest';
-import Application from './Copoments/Pages/Application';
-import PaymentID from './Copoments/Pages/Payment';
-import Basics from './Copoments/Pages/Payment/Basicpayment';
-import MainLoan from './Copoments/Pages/ApplyLoan/MainLoan';
-import Loan from './Copoments/Pages/ApplyLoan/loan';
-import Details from './Copoments/Pages/ApplyLoan/detail';
-import Dashboard from './Copoments/Pages/dashboard/Dashboard';
-import Display from './Copoments/Pages/ApplyLoan/DisplayAppID';
-import RepayAdmin from './Copoments/Pages/dashboard/RepayAdmin';
-import Verified from './Copoments/Pages/verified';
-import AdminVerified from './Copoments/Pages/dashboard/verification';
-import SignUp from './Copoments/Pages/sign-up/SignUp';
-import SignIn from './Copoments/Pages/sign-in/SignIn';
+import Home from './Components/Pages/Home';
+import FirebaseTest from './Components/Pages/firebaseTest';
+import Application from './Components/Pages/Application';
+import PaymentID from './Components/Pages/Payment';
+import Basics from './Components/Pages/Payment/Basicpayment';
+import MainLoan from './Components/Pages/ApplyLoan/MainLoan';
+import Loan from './Components/Pages/ApplyLoan/loan';
+import Details from './Components/Pages/ApplyLoan/detail';
+import Dashboard from './Components/Pages/dashboard/Dashboard';
+import Display from './Components/Pages/ApplyLoan/DisplayAppID';
+import RepayAdmin from './Components/Pages/dashboard/RepayAdmin';
+import Verified from './Components/Pages/verified';
+import AdminVerified from './Components/Pages/dashboard/verification';
+import SignUp from './Components/Pages/sign-up/SignUp';
+import SignIn from './Components/Pages/sign-in/SignIn';
 import Loading from './loading';
-import Status from './Copoments/Pages/Track status/Status'
-import FinalPrint from './Copoments/Pages/ApplyLoan/finalprint';
-import Card from './Copoments/Pages/Card/Card';
-import SMSForm from './Copoments/Pages/sms';
-import PersonDetails from './Copoments/Pages/dashboard/Admin Verify/table';
-import EMI from './Copoments/Pages/dashboard/EMI/EMI';
-import Profilecard from './Copoments/Pages/dashboard/Users/Profilecard';
-import DonationPayment from './Copoments/Pages/dashboard/donation/Basicpayment';
+import Status from './Components/Pages/Track status/Status'
+import FinalPrint from './Components/Pages/ApplyLoan/finalprint';
+import Card from './Components/Pages/Card/Card';
+import SMSForm from './Components/Pages/sms';
+import PersonDetails from './Components/Pages/dashboard/Admin Verify/table';
+import EMI from './Components/Pages/dashboard/EMI/EMI';
+import Profilecard from './Components/Pages/dashboard/Users/Profilecard';
+import DonationPayment from './Components/Pages/dashboard/donation/Basicpayment';
 import blog from './blog/blog';
 import singleandnick from './blog/single';
 import singleandhar from './blog/singgle-andhar';
@@ -40,16 +40,18 @@ import singleuttarpradesh from './blog/single-UttarPradesh';
 import singleuttarnchal from './blog/single-Uttarnchal';
 import singletamilnadu from './blog/single-TamilNadu';
 import singlewestbengal from './blog/single-WestBengal';
-import Gallery from './Copoments/Pages/gallery/Gallery';
-import FinalView from './Copoments/Pages/dashboard/FinalView/finalprint';
-import AdminGallery from './Copoments/Pages/dashboard/Gallery/AdminGallery';
-import ProtectedRoute from './Copoments/Pages/ProtectedRoute/ProtectedRoute';
-import AdminSignIn from './Copoments/Pages/dashboard/Sign/SignIn';
+import Gallery from './Components/Pages/gallery/Gallery';
+import FinalView from './Components/Pages/dashboard/FinalView/finalprint';
+import AdminGallery from './Components/Pages/dashboard/Gallery/AdminGallery';
+import ProtectedRoute from './Components/Pages/ProtectedRoute/ProtectedRoute';
+import AdminSignIn from './Components/Pages/dashboard/Sign/SignIn';
+import ngo from './Components/Pages/NGO/ngo';
 
 function App() {
   return (
     <BrowserRouter>
     <Switch>
+    <Route path="/Ngo" component={ngo} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
       <Route path="/firebase" component={FirebaseTest}/>

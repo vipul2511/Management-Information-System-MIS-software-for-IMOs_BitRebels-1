@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Img from './download.png'
 import { Container, Row,Col } from "react-bootstrap";
-import "./MainLoan.css";
+import "./ngo.css";
 import firebase from '../../../firebase SDK/firebase';
 import Header from '../../header/Header';
 
@@ -69,12 +69,10 @@ class App extends Component {
     if (!this.state.address) {
       addressError = "Address Cannot Be Blank";
     }
-    if(this.state.passwords ==""){
-      passwordsError="Password Cannot Be Blank";
-    }
+   
   
-    if (emailError || nameError || numberError || addressError || passwordsError) {
-      this.setState({ emailError, nameError, numberError, addressError,passwordsError });
+    if (emailError || nameError || numberError || addressError ) {
+      this.setState({ emailError, nameError, numberError, addressError, });
       return false;
     }
     return true;
@@ -177,6 +175,14 @@ class App extends Component {
             <option value="Farmer" >Farmer</option>
           </select>
           </div>
+              <input
+                type="text"
+                name="name"
+                className="det"
+                placeholder="Enter NGO Name"
+                value={this.state.name}
+                onChange={this.handlechange}
+              ></input>
               <input
                 type="text"
                 name="name"
