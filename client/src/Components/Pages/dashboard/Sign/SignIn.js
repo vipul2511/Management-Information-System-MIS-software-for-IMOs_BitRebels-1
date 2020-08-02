@@ -14,21 +14,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import firebase from '../../../../firebase SDK/firebase';
 import auth from '../../ProtectedRoute/Auth';
-
-
-
-// const uiConfig = {
-//   // Popup signin flow rather than redirect flow.
-//   signInFlow: 'popup',
-//   // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
-//   signInSuccessUrl: '/Dashboard',
-//   // We will display Google and Facebook as auth providers.
-//   signInOptions: [
-//     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-//     firebase.auth.PhoneAuthProvider.PROVIDER_ID
-//   ]
-// };
-
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">

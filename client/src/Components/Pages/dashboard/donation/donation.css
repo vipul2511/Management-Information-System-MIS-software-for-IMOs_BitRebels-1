@@ -199,7 +199,6 @@ a:hover {
   text-transform: uppercase;
   display: inline-block;
 }
-
 @media (max-width: 575px) {
   .slider-area .hero__caption span {
     margin-bottom: 30px;
@@ -268,9 +267,7 @@ a:hover {
   margin-left: 75vh;
   font-size: 28px;
   font-weight: bold;
-
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -283,16 +280,12 @@ a:hover {
 	font-family: Helvetica;
 	background: #eee;
   -webkit-font-smoothing: antialiased;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 .group { 
 	position: relative; 
 	margin-top: 45px; 
 }
-
 .inp {
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
@@ -321,22 +314,15 @@ a:hover {
 	top: -20px;
 	transition: all 0.2s ease;
 }
-
-
 .inp:focus ~ label, .inp.used ~ label {
-
   transform: scale(.75); left: -2px;
-	
 	color: #4a89dc;
 }
-
-
 .bar {
 	position: relative;
 	display: block;
 	width: 100%;
 }
-
 .bar:before, .bar:after {
 	content: '';
 	height: 2px; 
@@ -346,14 +332,9 @@ a:hover {
 	background: #4a89dc; 
 	transition: all 0.2s ease;
 }
-
 .bar:before { left: 50%; }
-
 .bar:after { right: 50%; }
-
-
 .inp:focus ~ .bar:before, .inp:focus ~ .bar:after { width: 50%; }
-
 .inp:focus ~ .highlight {
 	animation: inputHighlighter 0.3s ease;
 }
@@ -371,9 +352,6 @@ a:hover {
   text-align: center;
 
 }
-
-
-
 .buttonsss {
   position: relative;
   display: inline-block;
@@ -394,12 +372,8 @@ a:hover {
   transition: all 0.15s ease;
 }
 .buttonsss:focus { outline: 0; }
-
-
-
 .buttonBlue {
   background: #4a89dc;
   text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
 }
-
 .buttonBlue:hover { background: #357bd8; }

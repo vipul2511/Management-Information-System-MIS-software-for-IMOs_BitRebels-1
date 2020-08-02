@@ -4,8 +4,6 @@ import Button from "react-bootstrap/Button";
 import CardSection from './CardSection';
 import './CheckoutForm.css';
 import "./donation.css";
-
-
 class CheckoutForm extends React.Component {
    constructor(props){
      super(props);
@@ -95,25 +93,17 @@ console.log(this.props);
           console.log(confirmCardPayment);
             })   
           });
-  
-       
       }
-      
     }
-    
   };
-
   render() {
     return (
       <div >
           <div className="slider-area">
         <div className="slider-active">
-       
             <div className="single-slider slider-height d-flex align-items-center">
-          
                 <div className="container">
-            
-                    <div className="row">
+                  <div className="row">
                    
                         <div className="col-xl-6 col-lg-6 col-md-8 col-sm-10">
                         <div className= "char"> Charity For COVID-19</div>
@@ -134,10 +124,7 @@ console.log(this.props);
 </div>
     </div>
     <div className="modelAVC">
-   
-    
     <div id="myModal" className="modal">
-    
       <div className="modal-content">
         <span className="close">&times;</span>
        <div className="detail">Enter Details</div>
