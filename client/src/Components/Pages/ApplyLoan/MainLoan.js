@@ -14,12 +14,10 @@ const initial = {
   number: "",
   address: "",
  gender:"",
- passwords:"",
   nameError: "",
   emailError: "",
   numberError: "",
   addressError: "" ,
-  passwordsError:"",
 };
 
 let colors = ['orange', 'red', 'blue', 'purple'];
@@ -28,8 +26,6 @@ class App extends Component {
     initial,
     items:null,
     Locations:false,
-    passwords:"",
-    confirmPasswords:"",
     selectedOption:null,
     progress:'',
     url:'',
@@ -51,7 +47,7 @@ class App extends Component {
     let emailError = "";
     let numberError = "";
     let addressError = "";
-    let passwordsError ="";
+
 
     if (!this.state.name) {
       nameError = "Name Cannot Be Blank";
@@ -69,12 +65,10 @@ class App extends Component {
     if (!this.state.address) {
       addressError = "Address Cannot Be Blank";
     }
-    if(this.state.passwords ==""){
-      passwordsError="Password Cannot Be Blank";
-    }
+
   
-    if (emailError || nameError || numberError || addressError || passwordsError) {
-      this.setState({ emailError, nameError, numberError, addressError,passwordsError });
+    if (emailError || nameError || numberError || addressError) {
+      this.setState({ emailError, nameError, numberError, addressError });
       return false;
     }
     return true;
@@ -127,13 +121,10 @@ class App extends Component {
      Address:this.state.address,
      EmploymentType:this.state.items,
      Gender:this.state.selectedOption,
-     Password:this.state.passwords,
-     confirmPassword:this.state.confirmPasswords
     }
    
     const isValid = this.validate();
     console.log(this.state.items);
-      if(this.state.passwords===this.state.confirmPasswords){
         if (isValid) { 
           this.setState(initial);
           console.log(this.state);
@@ -141,15 +132,7 @@ class App extends Component {
           localStorage.setItem("students",JSON.stringify(obj));
           window.location.href="http://localhost:3000/Loan"
         }
-      }else{
-        alert("Please Enter the correct Password");
-      }
   };
-  getData =()=>{
-   
-    console.log(this.state.items);
-  }
-
   render() {
     return (
       <div >

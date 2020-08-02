@@ -14,6 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import firebase from '../../../firebase SDK/firebase';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import { defaultFormat } from 'moment';
 
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
@@ -24,10 +25,8 @@ const uiConfig = {
   signInOptions: [
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-    defaultCountry:'+91'
-  ]
+  ],
 };
-
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -40,7 +39,6 @@ function Copyright() {
     </Typography>
   );
 }
-
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -145,7 +143,7 @@ function submit(){
         </form>
       </div>
       <Box mt={8}>
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
+      <StyledFirebaseAuth uiConfig={uiConfig}  firebaseAuth={firebase.auth()}/>
         <Copyright />
       </Box>
     </Container>

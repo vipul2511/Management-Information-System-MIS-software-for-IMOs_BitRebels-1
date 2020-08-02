@@ -27,7 +27,6 @@ class FinalPrint extends Component {
          Address:null,
          AuthID:null,
          stateName:null
-
         }
     }
     componentDidMount(){
@@ -35,7 +34,7 @@ class FinalPrint extends Component {
         window.html2canvas = html2canvas;
         let retrievedObject = localStorage.getItem("finalData");
     let stored = JSON.parse(retrievedObject);
-    let DataObj= Object.assign({},stored);
+    let DataObj= Object.assign({},stored);   
     this.setState({firstForm:DataObj});
     console.log(DataObj);
     this.setState({Application:DataObj.AppID,Empo:DataObj.EmploymentType,AadhaarCard:DataObj.AadhaarCard,Account:DataObj.Account,Name:DataObj.Name})
@@ -56,12 +55,8 @@ htmltopdf(){
    doc.html(data,
    {
        callback:function(){
-        // window.open(doc.output('bloburl'));
         let linkData=doc.output("blob");
         let filePath = Date.now().toString();
-        // let pdfData=new FormData();
-        // pdfData.append("data",linkData);
-        // let printPDF=doc.save('Application.pdf')
         firebase.storage().ref('PDF/').child('Application/'+userID).put(linkData, {contentType:'application/pdf'}).then(function(snap){
             console.log("Uploaded ");
         });

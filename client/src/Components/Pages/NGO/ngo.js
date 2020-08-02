@@ -23,7 +23,7 @@ const initial = {
 };
 
 let colors = ['orange', 'red', 'blue', 'purple'];
-class App extends Component {
+class NGO extends Component {
   state = {
     initial,
     items:null,
@@ -265,4 +265,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default NGO;

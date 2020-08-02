@@ -1,8 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import ReactDOM from "react-dom";
-
 import Home from './Components/Pages/Home';
 import FirebaseTest from './Components/Pages/firebaseTest';
 import Application from './Components/Pages/Application';
@@ -45,13 +43,12 @@ import FinalView from './Components/Pages/dashboard/FinalView/finalprint';
 import AdminGallery from './Components/Pages/dashboard/Gallery/AdminGallery';
 import ProtectedRoute from './Components/Pages/ProtectedRoute/ProtectedRoute';
 import AdminSignIn from './Components/Pages/dashboard/Sign/SignIn';
-import ngo from './Components/Pages/NGO/ngo';
-
+import NGO from './Components/Pages/NGO/ngo';
 function App() {
   return (
     <BrowserRouter>
     <Switch>
-    <Route path="/Ngo" component={ngo} />
+    <Route path="/NGO" component={NGO} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
       <Route path="/firebase" component={FirebaseTest}/>
