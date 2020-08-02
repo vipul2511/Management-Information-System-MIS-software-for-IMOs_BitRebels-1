@@ -31,7 +31,7 @@ class Home extends Component {
     this.setState({ ImagesUrl: transformed });
     console.log(this.state.ImagesUrl);
   };
-
+  
   render() {
     const opts = {
       playerVars: {
