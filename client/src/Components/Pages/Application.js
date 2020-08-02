@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import './Application.css';
 import Header from '../header/Header';
 import firebase from '../../firebase SDK/firebase';
-
-
-
 class Application extends Component {
-
     state = {
         Num: [],
         selected: [],
@@ -16,22 +12,7 @@ class Application extends Component {
         ApplicationID:null,
         PhoneNumber:null
     }
-    // Here its function is for generating the unique no.
-    // sixdigit = () => {
-    //     var minm = 100000000;
-    //     var maxm = 999999999;
-    //     let downInnerHTML = Math.floor(Math
-    //         .random() * (maxm - minm + 1)) + minm;
-    //     console.log(downInnerHTML);
-    //     let newNum = this.state.Num;
-    //     newNum.push(downInnerHTML);
-    //     let items = this.state.Num;
-    //     this.setState({ selected: items.filter(number => number !== downInnerHTML) });
-    //     console.log(this.state.Num)
-    //     console.log("This is new Array "+ this.state.selected);
-    // }
     TrackApp=()=>{
-      
         let PhnNO=this.state.PhoneNo;
        let AppNum=Number(this.state.ApplicationID);
        console.log(AppNum);
@@ -55,28 +36,6 @@ class Application extends Component {
             console.log(post);
             console.log(phone);
         });
-        // newData.on("child_added",function(snapshot){
-        //    let PostData= snapshot.val();
-        //    console.log(PostData);
-        // })
-        // newData.orderByKey().equalTo('AppID').on("child_added",function(snapshot){
-        //  console.log(snapshot.key);
-        // });
-        // newData.on('value',(snapshot)=>{
-        //     let items =[];
-        //     snapshot.forEach((child)=>{
-        //       items.push({
-        //         ApplicationNumber:child.val().ApplicationID,
-        //         MobileNo: child.val().PhoneNumber,
-        //     //    Email_value:child.val().Email,
-        //     //    profile_img:child.val().url,
-        //     //    total_item:child.val().Totaldonation
-            
-        //       });
-        //     });
-        //     this.setState({ data:items});
-        //     console.log(`${this.state.data}`);   
-        // })
         }
      componentWillMount(){
          this.readData();

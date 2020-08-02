@@ -36,9 +36,7 @@ class App extends Component {
     image:null,
     file:null
   };
-  // onhandleChange=({target})=>{
-  //   this.setState({ [target.name]:target.value});
-  //    }
+  
   handlechange = (event) => {
     const isCheckbox = event.target.type === "checkbox";
     this.setState({
@@ -132,7 +130,7 @@ class App extends Component {
      Password:this.state.passwords,
      confirmPassword:this.state.confirmPasswords
     }
-    // event.preventDefault();
+   
     const isValid = this.validate();
     console.log(this.state.items);
       if(this.state.passwords===this.state.confirmPasswords){
@@ -148,27 +146,25 @@ class App extends Component {
       }
   };
   getData =()=>{
-    // let retrievedObject = localStorage.getItem("students");
-    // let stored = JSON.parse(retrievedObject);
-    // console.log(stored);
+   
     console.log(this.state.items);
   }
 
   render() {
     return (
-      <div>
+      <div >
       <Header  />
       <div className="fullBox">
       <Container fluid className="headss top_mar">
         <Row className="col">
             <div className="sec">
-              <h1>Get Your Loan Report & Score Now</h1>
-              <h3 className="h3head">With Loan analysis and monthly updates</h3>
+              <h1>Apply For Your Loan</h1>
+              <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
             <div style={{position:'absolute',marginLeft:'95vh'}}>
             <img src= {this.state.file||Img} alt="pic" className="Cont" style={{width:"140px",height:"150px" }}/>
             <div className="upload-btn-wrapper">
-            {/* <button className="btnID">Upload a file</button> */}
+           
             <input type="file" className="input-fileData" onChange={this.imageUpload} name="myfile" />
             </div>
             </div>
@@ -198,10 +194,12 @@ class App extends Component {
                 value={this.state.email}
                 onChange={this.handlechange}
               ></input>
+
+
               <div className="error">{this.state.emailError}</div>
-              <b className="optionhead">Gender :</b>
-              <span className="genderbtn">
-              <label className="option" for="gender1">
+              <b className="optionhead labe">Gender :</b>
+              <span className="genderbtn ">
+              <label className="option opt" for="gender1">
                 <input
                   type="radio"
                   name="gender"
@@ -213,18 +211,19 @@ class App extends Component {
                   Male
                 </label>
               </span>
+
               <span className="genderbtn2">
                 <input type="radio" name="gender" value="Female" checked={this.state.selectedOption =='Female'}
                 onChange={this.handleOptionChange}
                  className="gender"></input>
                 <span className="option">Female</span>
               </span>
-              <br></br>
+          <br></br>
               <input
                 type="text"
                 name="number"
                 className="det"
-                placeholder="Enter Your Phone Number"
+                placeholder="Enter Your Phone No."
                 maxLength={10}
                 value={this.state.number}
                 onChange={this.handlechange}
@@ -238,41 +237,13 @@ class App extends Component {
                 value={this.state.address}
                 onChange={this.handlechange}
               ></textarea>
-              <div className="error">{this.state.addressError}</div>
-              <div className="input-icons">
-              <FaEye size={20} className="icon" />
+             <br></br>
               
-              <input
-              
-              type="password"
-                placeholder="Password"
-                name="passwords"
-                onChange={this.handlechange}
-                value={this.state.passwords}
-                className="det"
-                
-              >
-              </input>
-               </div>
-              <div className="error">{this.state.passwordsError}</div>
-              <div className="input-icons">
-              <FaEye size={20} className="icon" />
-              
-              <input
-                type="password"
-                security={true}
-                className="det"
-                value={this.state.confirmPasswords}
-                name="confirmPasswords"
-                onChange={this.handlechange}
-                placeholder="Confirm Password"
-              ></input>
-             </div>
-             
               <br></br>
+             
                 <Button
                   type="submit"
-                  className="Button"
+                  className="button"
                   onClick={this.newItemsData}
                 >
                   Submit
