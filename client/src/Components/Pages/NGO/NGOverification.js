@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import { Table } from "react-bootstrap";
-import "./verification.css";
+import "./NGOverification.css";
 import firebase from '../../../firebase SDK/firebase';
 
 import Header from '../../header/Header';
@@ -22,7 +22,8 @@ class AdminVerified extends Component {
         console.log(snapshot1.val()); 
         Data.push(snapshot1.val());
     });
-     
+      // let Data=[];
+      // Data.push(snap.val());
       this.setState({userData:Data});
     }.bind(this));
     

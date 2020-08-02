@@ -9,21 +9,23 @@ import Header from '../../header/Header';
 
 import { Validator } from 'format-utils';
 const initial = {
+  ngoname:"",
   name: "",
   email: "",
   number: "",
   address: "",
  gender:"",
- passwords:"",
+
+ ngoError:"",
   nameError: "",
   emailError: "",
   numberError: "",
   addressError: "" ,
-  passwordsError:"",
+  
 };
 
 let colors = ['orange', 'red', 'blue', 'purple'];
-class App extends Component {
+class NGO extends Component {
   state = {
     initial,
     items:null,
@@ -47,11 +49,16 @@ class App extends Component {
   };
 
   validate = () => {
+    let ngoError = "";
     let nameError = "";
     let emailError = "";
     let numberError = "";
     let addressError = "";
-    let passwordsError ="";
+   
+
+    if (!this.state.ngoname) {
+      ngoError = "NGO Name Cannot Be Blank";
+    }
 
     if (!this.state.name) {
       nameError = "Name Cannot Be Blank";
@@ -71,8 +78,8 @@ class App extends Component {
     }
    
   
-    if (emailError || nameError || numberError || addressError ) {
-      this.setState({ emailError, nameError, numberError, addressError, });
+    if (emailError || nameError || numberError || addressError || ngoError ) {
+      this.setState({ emailError, nameError, numberError, addressError,ngoError});
       return false;
     }
     return true;
@@ -119,28 +126,26 @@ class App extends Component {
   handleSubmit = (event) => {
     let obj;
     obj={
+      ngoname:this.state.ngoname,
      Name:this.state.name,
      Email:this.state.email,
      Phone:this.state.number,
      Address:this.state.address,
      EmploymentType:this.state.items,
      Gender:this.state.selectedOption,
-     Password:this.state.passwords,
-     confirmPassword:this.state.confirmPasswords
+     
     }
    
     const isValid = this.validate();
     console.log(this.state.items);
-      if(this.state.passwords===this.state.confirmPasswords){
+      {
         if (isValid) { 
           this.setState(initial);
           console.log(this.state);
           localStorage.setItem("phone",JSON.stringify(this.state.number));
           localStorage.setItem("students",JSON.stringify(obj));
-          window.location.href="http://localhost:3000/Loan"
+          window.location.href="http://localhost:3000/NGOloan"
         }
-      }else{
-        alert("Please Enter the correct Password");
       }
   };
   getData =()=>{
@@ -177,10 +182,10 @@ class App extends Component {
           </div>
               <input
                 type="text"
-                name="name"
+                ngoname="name"
                 className="det"
                 placeholder="Enter NGO Name"
-                value={this.state.name}
+                value={this.state.ngoname}
                 onChange={this.handlechange}
               ></input>
               <input
@@ -265,4 +270,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default NGO;

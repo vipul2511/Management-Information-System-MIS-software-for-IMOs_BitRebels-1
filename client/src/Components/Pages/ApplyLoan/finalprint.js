@@ -56,12 +56,10 @@ htmltopdf(){
    doc.html(data,
    {
        callback:function(){
-        // window.open(doc.output('bloburl'));
+      
         let linkData=doc.output("blob");
         let filePath = Date.now().toString();
-        // let pdfData=new FormData();
-        // pdfData.append("data",linkData);
-        // let printPDF=doc.save('Application.pdf')
+       
         firebase.storage().ref('PDF/').child('Application/'+userID).put(linkData, {contentType:'application/pdf'}).then(function(snap){
             console.log("Uploaded ");
         });
