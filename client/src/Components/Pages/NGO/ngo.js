@@ -15,23 +15,18 @@ const initial = {
   number: "",
   address: "",
  gender:"",
-
  ngoError:"",
   nameError: "",
   emailError: "",
   numberError: "",
   addressError: "" ,
-  
 };
-
 let colors = ['orange', 'red', 'blue', 'purple'];
 class NGO extends Component {
   state = {
     initial,
     items:null,
     Locations:false,
-    passwords:"",
-    confirmPasswords:"",
     selectedOption:null,
     progress:'',
     url:'',
@@ -132,27 +127,20 @@ class NGO extends Component {
      Phone:this.state.number,
      Address:this.state.address,
      EmploymentType:this.state.items,
-     Gender:this.state.selectedOption,
-     
+    Gender:this.state.selectedOption,
     }
-   
     const isValid = this.validate();
     console.log(this.state.items);
-      {
         if (isValid) { 
           this.setState(initial);
           console.log(this.state);
-          localStorage.setItem("phone",JSON.stringify(this.state.number));
-          localStorage.setItem("students",JSON.stringify(obj));
-          window.location.href="http://localhost:3000/NGOloan"
+          localStorage.setItem("NGOPhone",JSON.stringify(this.state.number));
+          localStorage.setItem("NGOData",JSON.stringify(obj));
+          window.location.href="http://localhost:3000/Ngoloan"
+        }else{
+alert("Not working");
         }
-      }
   };
-  getData =()=>{
-   
-    console.log(this.state.items);
-  }
-
   render() {
     return (
       <div >
@@ -180,14 +168,16 @@ class NGO extends Component {
             <option value="Farmer" >Farmer</option>
           </select>
           </div>
+          <div className="error">{this.state.ngoError}</div>
               <input
                 type="text"
-                ngoname="name"
+                name="ngoname"
                 className="det"
                 placeholder="Enter NGO Name"
                 value={this.state.ngoname}
                 onChange={this.handlechange}
               ></input>
+              <div className="error">{this.state.nameError}</div>
               <input
                 type="text"
                 name="name"
@@ -196,7 +186,7 @@ class NGO extends Component {
                 value={this.state.name}
                 onChange={this.handlechange}
               ></input>
-              <div className="error">{this.state.nameError}</div>
+              
               <input
                 type="text"
                 name="email"

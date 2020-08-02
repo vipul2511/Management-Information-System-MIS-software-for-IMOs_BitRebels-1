@@ -87,16 +87,16 @@ if(!this.state.literacyLevel){
       console.log(this.state);
       this.setState(initial);
       let newData = this.state.newObj
-      localStorage.setItem('finalData',JSON.stringify(finalData));
+      localStorage.setItem('finalNGO',JSON.stringify(finalData));
       const Data = firebase.database().ref('users/').child('Application/'+this.state.AuthID).set({finalData}).then(success =>{
-        window.location.href="/Final";
+        window.location.href="/FinalView";
       });
       console.log(Data);
       
     }
   };
   componentDidMount(){
-    let retrievedObject = localStorage.getItem("hello");
+    let retrievedObject = localStorage.getItem("NGOLoan");
     let stored = JSON.parse(retrievedObject);
     let DataObj= Object.assign({},stored);
     this.setState({firstObj:DataObj});
@@ -111,7 +111,7 @@ if(!this.state.literacyLevel){
     console.log(downInnerHTML);
     this.setState({AppID:downInnerHTML});
 
-    let retrievedObjects = localStorage.getItem("students");
+    let retrievedObjects = localStorage.getItem("NGOData");
     let storeds = JSON.parse(retrievedObjects);
     let InfoData= Object.assign({},storeds);
     this.setState({secondObj:InfoData})
