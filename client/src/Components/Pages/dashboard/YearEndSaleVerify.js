@@ -55,7 +55,7 @@ class LastQuarterVerification extends Component {
             <th>PANCard No.</th>
             <th>Account No.</th>
             <th>Loan Amount</th>
-            <th>Sale Report</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
