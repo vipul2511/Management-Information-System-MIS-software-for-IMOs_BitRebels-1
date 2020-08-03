@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             </Nav.Link>
             <button
-              className="btn btn1 shadow_btn"
+              className="btn btn12 shadow_btn"
               type="submit"
               onClick={logout}
             >
