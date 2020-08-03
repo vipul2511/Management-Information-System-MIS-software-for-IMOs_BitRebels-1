@@ -30,14 +30,14 @@
     margin-top: -4px;
     width: 20vh;
   }
-  button.btn1 {
+  button.btn12 {
     height: 6vh;
     width: 20vh;
     background: #3abaf1;
     color: #ffffff;
     border-color: #3abaf1;
     margin-top: 0px;
-    margin-left: 64vh;
+    margin-left: 65vh;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     border-radius: 100;
@@ -48,10 +48,10 @@
     font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
     font-weight: 400;
   }
-  button.btn1:hover,
-  button.btn1:active,
-  button.btn1:focus,
-  button.btn1.active {
+  button.btn12:hover,
+  button.btn12:active,
+  button.btn12:focus,
+  button.btn12.active {
     color: #3abaf1;
     background-color: #ffffff;
     border-color: #3abaf1;
