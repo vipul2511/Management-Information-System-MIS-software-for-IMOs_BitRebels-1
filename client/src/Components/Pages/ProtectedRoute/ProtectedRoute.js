@@ -16,7 +16,7 @@ export const ProtectedRoute = ({
           return (
             <Redirect
               to={{
-                pathname: "/AdminSign",
+                pathname: "/AdminSignIn",
                 state: {
                   from: props.location
                 }

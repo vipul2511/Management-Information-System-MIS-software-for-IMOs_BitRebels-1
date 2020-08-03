@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./MainLoan.css";
 import firebase from '../../../firebase SDK/firebase';
 import Header from '../../header/Header';
+import moment from 'moment';
 var base64 = require('base-64');
 const initial = {
   Income:"",
@@ -87,8 +88,15 @@ if(!this.state.literacyLevel){
       this.setState(initial);
       let newData = this.state.newObj
       localStorage.setItem('finalData',JSON.stringify(dummyData));
+      const now = moment();
+    const dateFormatted = now.format('M');
+    const year=now.format('yyyy');
       const Data = firebase.database().ref('users/').child('Application/'+this.state.AuthID).set({finalData}).then(success =>{
+       firebase.database().ref('users/').child('Data/'+dateFormatted).push({dummyData}).then(success =>{
+        firebase.database().ref('users/').child('Data/'+year).push({dummyData}).then(success =>{
         window.location.href="/Final";
+       });
+      });
       });
       console.log(Data);  
     }
