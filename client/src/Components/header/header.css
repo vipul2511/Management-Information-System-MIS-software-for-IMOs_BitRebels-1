@@ -97,7 +97,7 @@ button.btn_order.active {
   text-decoration: none;
   color: #ff9001;
 }
-<<<<<<< HEAD
+
 .navlink1{
   transition: 0.3s;
   height: 2vh;
@@ -149,7 +149,7 @@ button.btn_order.active {
   text-decoration: none;
   color:
    #ff9001;
-=======
+}
 #google_translate_element{
   left: 111vh;
   position: absolute;
@@ -164,7 +164,7 @@ button.btn_order.active {
   left: 132vh;
   z-index: 2;
   position: absolute;
->>>>>>> 73ccb66ab7cdc633bd58c88e3d7a08bb55043607
+
 }
 @media screen and (max-width: 360px) {
   button.btn_order {
