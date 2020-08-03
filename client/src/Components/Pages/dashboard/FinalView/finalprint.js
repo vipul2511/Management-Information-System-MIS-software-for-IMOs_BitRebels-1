@@ -30,20 +30,21 @@ class FinalView extends Component {
          Address:null,
          AuthID:null,
          to:null,
-         message:null
+         message:null,
+         ngoname:null
         }
         this.handleChange = this.handleChange.bind(this);
     }
     componentDidMount(){
    console.log(userID);
         window.html2canvas = html2canvas;
-        let retrievedObject = localStorage.getItem("finalData");
+        let retrievedObject = localStorage.getItem("finalNGO");
     let stored = JSON.parse(retrievedObject);
     let DataObj= Object.assign({},stored);
     this.setState({firstForm:DataObj});
     console.log(DataObj);
     this.setState({Application:DataObj.AppID,Empo:DataObj.EmploymentType,AadhaarCard:DataObj.AadhaarCard,Account:DataObj.Account,Name:DataObj.Name})
-     this.setState({CurrentIncome:DataObj.CurrentIncome,Email:DataObj.Email,PANCard:DataObj.PANCard,cast:DataObj.cast,phone:DataObj.Phone,Address:DataObj.Address});
+     this.setState({CurrentIncome:DataObj.CurrentIncome,Email:DataObj.Email,ngoname:DataObj.ngoname, PANCard:DataObj.PANCard,cast:DataObj.cast,phone:DataObj.Phone,Address:DataObj.Address});
      this.setState({literacyLevel:DataObj.literacyLevel,religion:DataObj.religion,totalFamilyNO:DataObj.totalFamilyNO,Gender:DataObj.Gender,amount:DataObj.Amount});
 setTimeout(this.htmltopdf,1000);
     }
@@ -51,8 +52,7 @@ setTimeout(this.htmltopdf,1000);
         window.location.href="/EMI"
     }
     handleChange=(event)=>{
-this.setState({message: event.target.value})
-;
+this.setState({message: event.target.value});
     }
     onSubmit=()=> {
         console.log(this.state.message)
@@ -97,10 +97,6 @@ this.setState({message: event.target.value})
  openModel=()=>{
     var btn = document.getElementById("myBtn");
     var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    
-    
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
     
@@ -180,13 +176,15 @@ this.setState({message: event.target.value})
                  </td>
                  <td><h6>{this.state.Application}</h6></td>
                  <td>
-                     <b>Employment Type</b>
+                     <b>NGO Name</b>
                  </td>
-                 <td><h6>{this.state.Empo}</h6></td>
+                 <td><h6>{this.state.ngoname}</h6></td>
               </tr>
               <tr>
                   <td><b>Name</b></td>
-                  <td colSpan="3"><h6>{this.state.Name}</h6></td>
+                  <td><h6>{this.state.Name}</h6></td>
+                  <td><b>Employment Type</b></td>
+                  <td><h6>{this.state.Empo}</h6></td>
               </tr>
               <tr>
                  <td><b>Email-ID </b></td>

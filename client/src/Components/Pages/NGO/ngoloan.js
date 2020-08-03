@@ -73,16 +73,15 @@ class NGOloan extends Component {
  }
  newItemsData =()=>{ 
   const {image} = this.state;
-  let phone = localStorage.getItem("phone");
+  let phone = localStorage.getItem("NGOPhone");
   let phoneID= JSON.parse(phone);
    if(image != null){
-    const uploadTask = firebase.storage().ref().child('BankReceipt/'+phoneID).put(image);
+    const uploadTask = firebase.storage().ref().child('BankReceiptByNGO/'+phoneID).put(image);
     console.log(uploadTask)
     setTimeout(this.handleSubmit,1000); 
    }else{
      alert("Please choose Bank Receipt and Try again");
    }
-  
  }
   handleSubmit = (event) => {
     let objects;
@@ -92,7 +91,6 @@ class NGOloan extends Component {
      Amount:this.state.amount,
      AadhaarCard:this.state.aadhaar,
      stateName:this.state.StaName
-     
     }
     const isValid = this.validate();
     if (isValid) {
@@ -100,8 +98,8 @@ class NGOloan extends Component {
         if(Validator.pan(this.state.pancard)){
           console.log(this.state);
           this.setState(initial);
-          localStorage.setItem("hello",JSON.stringify(objects));
-          window.location.href="http://localhost:3000/NGODetails"
+          localStorage.setItem("NGOLoan",JSON.stringify(objects));
+          window.location.href="http://localhost:3000/Ngodetails"
         }else{
           alert("Please enter correct Pan Card number");
         }

@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aadhaar-validator": "^1.1.0",
     "axios": "^0.19.2",
+    "base-64": "^0.1.0",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
     "clsx": "^1.1.0",

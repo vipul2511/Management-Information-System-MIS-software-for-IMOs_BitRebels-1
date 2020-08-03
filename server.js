@@ -38,7 +38,7 @@ cron.schedule("* * * * *", function() {
       .create({
         from: process.env.TWILIO_PHONE_NUMBER,
         to: '+91'+phone,
-        body:`Your Loan EMI is ${amount} to be paid at ${date}. Kindly Ignore this message paid already.`
+        body:`Your Loan EMI is ${amount} to be paid at ${date}. Kindly Ignore this message if paid already.`
       })
         .then(message => console.log(message,'success'))
             .catch(err => console.log(err));

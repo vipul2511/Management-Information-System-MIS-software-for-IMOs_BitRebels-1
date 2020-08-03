@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./finalprint.css";
+import "./finalViewing.css";
 import * as jsPDF from 'jspdf';
 import * as html2canvas from 'html2canvas';
-import firebase from '../../../firebase SDK/firebase';
+import firebase from '../../../../firebase SDK/firebase';
 let userID;
-class FinalPrint extends Component {
+class FinalNGO extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -32,7 +32,7 @@ class FinalPrint extends Component {
     componentDidMount(){
    console.log(userID);
         window.html2canvas = html2canvas;
-        let retrievedObject = localStorage.getItem("finalData");
+        let retrievedObject = localStorage.getItem("finalNGO");
     let stored = JSON.parse(retrievedObject);
     let DataObj= Object.assign({},stored);   
     this.setState({firstForm:DataObj});
@@ -68,9 +68,9 @@ htmltopdf(){
         <div>
         <div className="main_loan" id="loanPDF">
         <div style={{marginTop:'2vw',marginLeft:'4rem'}}>
-        <img src={require('../../Images/download.jfif')} className="loanDetailsLogo" alt="logo Details" />
+        <img src={require('../../../Images/download.jfif')} className="loanDetailsLogo" alt="logo Details" />
         <div className="loanHead">
-        <b style={{fontSize:'25px'}}> Loan Details</b>
+        <b style={{fontSize:'25px'}}> Loan Details by NGO</b>
         <button className="btn prt_btn" onClick={this.abdhdID}>PRINT</button> 
      </div>
      
@@ -161,4 +161,4 @@ htmltopdf(){
   }
 }
 
-export default FinalPrint;
+export default FinalNGO;

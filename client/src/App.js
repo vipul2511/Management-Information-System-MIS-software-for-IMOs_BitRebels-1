@@ -1,11 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import ReactDOM from "react-dom";
-
 import Home from './Components/Pages/Home';
 import FirebaseTest from './Components/Pages/firebaseTest';
 import Application from './Components/Pages/Application';
+import FinalNGO from './Components/Pages/NGO/FinalViewing/finalView';
 import PaymentID from './Components/Pages/Payment';
 import Basics from './Components/Pages/Payment/Basicpayment';
 import MainLoan from './Components/Pages/ApplyLoan/MainLoan';
@@ -59,9 +58,8 @@ function App() {
     <Route path="/Ngo" component={NGO} />
     <Route path="/Ngodetails" component={NGOdetails} />
     <Route path="/Ngoloan" component={NGOloan} />
-      <Route path="/NGORepayAdmin" component={NGORepayAdmin} />
-      <Route path="/NGOApplication" component={NGOApplication} />
-      <Route path="/NGOFinalprint" component={NGOFinalprint}/>
+      <Route path="/NGOAdmin" component={NGORepayAdmin} />
+      <Route path="/FinalNGO" component={FinalNGO} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
       <Route path="/firebase" component={FirebaseTest}/>

@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./MainLoan.css";
 import firebase from '../../../firebase SDK/firebase';
 import Header from '../../header/Header';
-import MyDocument from './Invoice';
+var base64 = require('base-64');
 const initial = {
   Income:"",
   literacyLevel:"", 
@@ -35,9 +35,6 @@ class Details extends Component {
         : event.target.value,
     });
   };
-
- 
-
   validate = () => {
     let IncomeError ="";
     let literacyError="";
@@ -79,7 +76,9 @@ if(!this.state.literacyLevel){
     let target= this.state.firstObj;
     let source = this.state.secondObj;
     const returnedTarget = Object.assign(target, source);
-    const finalData = Object.assign(returnedTarget, perObj);
+    const dummyData = Object.assign(returnedTarget, perObj);
+   let encodedData= base64.encode(dummyData);
+     const finalData=encodedData;
     console.log(finalData);
     event.preventDefault();
     const isValid = this.validate();
@@ -87,16 +86,17 @@ if(!this.state.literacyLevel){
       console.log(this.state);
       this.setState(initial);
       let newData = this.state.newObj
-      localStorage.setItem('finalData',JSON.stringify(finalData));
+      localStorage.setItem('finalData',JSON.stringify(dummyData));
       const Data = firebase.database().ref('users/').child('Application/'+this.state.AuthID).set({finalData}).then(success =>{
         window.location.href="/Final";
       });
-      console.log(Data);
-      
+      console.log(Data);  
     }
   };
   componentDidMount(){
     let retrievedObject = localStorage.getItem("hello");
+   let dataDecode= base64.decode("W29iamVjdCBPYmplY3Rd");
+   console.log(dataDecode)
     let stored = JSON.parse(retrievedObject);
     let DataObj= Object.assign({},stored);
     this.setState({firstObj:DataObj});
