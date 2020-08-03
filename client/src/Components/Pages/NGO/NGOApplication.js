@@ -57,7 +57,7 @@ class NGOApplication extends Component {
             <h1>NGO Sign In</h1>
             <p>
               For security reasons,please answer the fields below to
-              <br /> fetch your applications.
+              <br /> fetch your applications
             </p>
             <form>
               <input
