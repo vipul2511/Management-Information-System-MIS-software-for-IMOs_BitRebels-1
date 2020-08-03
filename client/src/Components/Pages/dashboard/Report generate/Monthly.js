@@ -18,7 +18,7 @@ class MonthlyReport extends Component {
     const now = moment();
     const month=now.format('M');
     console.log(month);
-    firebase.database().ref('users/Data/'+month).once("child_added",function(snapshot){
+    firebase.database().ref('users/Data/'+month).orderByChild('dummyData').once("value",function(snapshot){
       console.log(snapshot.val());
       let item=this.state.userData;
         item.push(snapshot.val());
