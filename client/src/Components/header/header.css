@@ -86,31 +86,68 @@ button.btn_order.active {
   border-color: #ff9001;
 }
 .navlink{
-  margin-right: 4vh;
   transition: 0.3s;
-  height: 10vh;
+  height: 2vh;
   font-weight: bold;
   text-decoration: none;
+  float: left;
+  width: 10vh;
 }
 .navlink:hover{
-  margin-right: 4vh;
   text-decoration: none;
   color: #ff9001;
 }
-#google_translate_element{
-  left: 111vh;
-  position: absolute;
-  z-index: 1;
-  top: 4.2vh;
+.navlink1{
+  transition: 0.3s;
+  height: 2vh;
+  font-weight: bold;
+  text-decoration: none;
+  float: left;
+  width: 21vh;
 }
-.googlecover{
-  background-color: white;
-  height: 4vh;
-  width: 22.3vh;
-  top: 4.2vh;
-  left: 133vh;
-  z-index: 2;
-  position: absolute;
+.navlink1:hover{
+  text-decoration: none;
+  color:
+   #ff9001;
+}
+.navlink2{
+  transition: 0.3s;
+  height: 2vh;
+  font-weight: bold;
+  text-decoration: none;
+  float: left;
+  width: 10vh;
+}
+.navlink2:hover{
+  text-decoration: none;
+  color:
+   #ff9001;
+}
+.navlink3{
+  transition: 0.3s;
+  height: 2vh;
+  font-weight: bold;
+  text-decoration: none;
+  float: left;
+  width: 12vh;
+}
+.navlink3:hover{
+  text-decoration: none;
+  color:
+   #ff9001;
+}
+.navlink4{
+  transition: 0.3s;
+  height: 2vh;
+  font-weight: bold;
+  text-decoration: none;
+  float: left;
+  width: 20vh;
+}
+.navlink4:hover{
+  text-decoration: none;
+  color:
+   #ff9001;
 }
 @media screen and (max-width: 360px) {
   button.btn_order {

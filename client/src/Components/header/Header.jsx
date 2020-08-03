@@ -30,16 +30,9 @@ const Header = () => {
   function ApplyLoan() {
     window.location.href = "/ApplyLoan";
   }
- function googleTranslateElementInit () {
-    /* eslint-disable no-new */
-    new window.google.translate.TranslateElement({pageLanguage: 'pt', layout: window.google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element')
-  }
-   useEffect(()=>{window.googleTranslateElementInit = googleTranslateElementInit()})
+
   return (
     <div>
-    <script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' />
-    <div id="google_translate_element"></div>
-    <div className="googlecover"></div>
     <Navbar bg="white" expand="lg">
       <Navbar.Brand href="#home">
         <img
@@ -57,24 +50,30 @@ const Header = () => {
             </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/application" className="navlink">
+            <Link to="/application" className="navlink1">
               Repayment Track
             </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/Gallery" className="navlink">
+            <Link to="/Gallery" className="navlink2">
               Gallery{" "}
             </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/DonationPayment" className="navlink">
+            <Link to="/DonationPayment" className="navlink3">
               Donation
             </Link>
           </Nav.Link>
           <Nav.Link href="#link">
             {" "}
-            <Link to="/blog" className="navlink">
+            <Link to="/blog" className="navlink4">
               Success Stories
+            </Link>
+          </Nav.Link>
+          <Nav.Link href="#link">
+            {" "}
+            <Link to="/NGOApplication" className="navlink5">
+              NGO Login
             </Link>
           </Nav.Link>
           {user ? (
