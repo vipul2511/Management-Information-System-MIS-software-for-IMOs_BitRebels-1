@@ -26,7 +26,8 @@ class FinalNGO extends Component {
          amount:null,
          Address:null,
          AuthID:null,
-         stateName:null
+         stateName:null,
+         ngoname:null
         }
     }
     componentDidMount(){
@@ -38,7 +39,7 @@ class FinalNGO extends Component {
     this.setState({firstForm:DataObj});
     console.log(DataObj);
     this.setState({Application:DataObj.AppID,Empo:DataObj.EmploymentType,AadhaarCard:DataObj.AadhaarCard,Account:DataObj.Account,Name:DataObj.Name})
-     this.setState({CurrentIncome:DataObj.CurrentIncome,stateName:DataObj.stateName,Email:DataObj.Email,PANCard:DataObj.PANCard,cast:DataObj.cast,phone:DataObj.Phone,Address:DataObj.Address});
+     this.setState({CurrentIncome:DataObj.CurrentIncome,ngoname:DataObj.ngoname,stateName:DataObj.stateName,Email:DataObj.Email,PANCard:DataObj.PANCard,cast:DataObj.cast,phone:DataObj.Phone,Address:DataObj.Address});
      this.setState({literacyLevel:DataObj.literacyLevel,religion:DataObj.religion,totalFamilyNO:DataObj.totalFamilyNO,Gender:DataObj.Gender,amount:DataObj.Amount});
 setTimeout(this.htmltopdf,1000);
     }
@@ -82,7 +83,7 @@ htmltopdf(){
                  </td>
                  <td><h6>{this.state.Application}</h6></td>
                  <td><b>NGO Name</b></td>
-                 <td><h6></h6></td>
+                 <td><h6>{this.state.ngoname}</h6></td>
               </tr>
               <tr>
                   <td><b>Name</b></td>

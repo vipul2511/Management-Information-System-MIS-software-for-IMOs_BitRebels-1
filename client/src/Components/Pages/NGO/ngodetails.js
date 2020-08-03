@@ -88,13 +88,16 @@ if(!this.state.literacyLevel){
       this.setState(initial);
       let newData = this.state.newObj;
       const now = moment();
-      const dateFormatted = now.format('DDMYYYY');
+      const dateFormatted = now.format('M');
+      const year=now.format('yyyy');
       localStorage.setItem('finalNGO',JSON.stringify(finalData));
       const Data = firebase.database().ref('users/').child('NGOData/'+this.state.AuthID).set({finalData}).then(success =>{
        firebase.database().ref('users/').child('Data/'+dateFormatted).push({finalData}).then(succ=>{
-        window.location.href="/FinalView";
+        firebase.database().ref('users/').child('Data/'+year).push({finalData}).then(succ=>{
+        window.location.href="/FinalNGO";
        });
       });
+    });
       console.log(Data);  
     }
   };
