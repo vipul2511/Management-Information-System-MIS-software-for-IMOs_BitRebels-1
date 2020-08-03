@@ -51,6 +51,8 @@ import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin';
 import CurrentReport from './Components/Pages/dashboard/Report generate/Report';
 import NGOApplication from './Components/Pages/NGO/NGOApplication'
 import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
+import LastQuarter from './Components/Pages/dashboard/LastQuarter';
+import LastQuarterVerification from './Components/Pages/dashboard/LastQuarterVerification';
 import YearEndSale from './Components/Pages/dashboard/YearEndSale';
 import YearEndSaleVerify from './Components/Pages/dashboard/YearEndSaleVerify';
 function App() {
@@ -59,6 +61,8 @@ function App() {
     <Switch>
     <Route path="/YearEndSaleVerify" component={YearEndSaleVerify} />
     <Route path="/YearEndSale" component={YearEndSale} />
+    <Route path="/LastQuarterVerification" component={LastQuarterVerification} />
+    <Route path="/LastQuarter" component={LastQuarter} />
     <Route path="/Ngo" component={NGO} />
     <Route path="/CurrentMonth" component={CurrentReport} />
     <Route path="/Ngodetails" component={NGOdetails} />
