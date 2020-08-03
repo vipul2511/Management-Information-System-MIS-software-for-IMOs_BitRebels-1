@@ -47,7 +47,8 @@ import AdminSignIn from './Components/Pages/dashboard/Sign/SignIn';
 import NGO from './Components/Pages/NGO/ngo';
 import NGOdetails from './Components/Pages/NGO/ngodetails';
 import NGOloan from './Components/Pages/NGO/ngoloan';
-import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin'
+import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin';
+import CurrentReport from './Components/Pages/dashboard/Report generate/Report';
 import NGOApplication from './Components/Pages/NGO/NGOApplication'
 import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
 import LastQuarter from './Components/Pages/dashboard/LastQuarter';
@@ -59,9 +60,11 @@ function App() {
     <Route path="/LastQuarterVerification" component={LastQuarterVerification} />
     <Route path="/LastQuarter" component={LastQuarter} />
     <Route path="/Ngo" component={NGO} />
+    <Route path="/CurrentMonth" component={CurrentReport} />
     <Route path="/Ngodetails" component={NGOdetails} />
     <Route path="/Ngoloan" component={NGOloan} />
       <Route path="/NGOAdmin" component={NGORepayAdmin} />
+      <Route path="/NGOApplication" component={NGOApplication} />
       <Route path="/FinalNGO" component={FinalNGO} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>

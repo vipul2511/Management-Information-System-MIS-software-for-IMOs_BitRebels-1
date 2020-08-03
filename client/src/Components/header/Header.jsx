@@ -30,8 +30,16 @@ const Header = () => {
   function ApplyLoan() {
     window.location.href = "/ApplyLoan";
   }
-
+ function googleTranslateElementInit () {
+    /* eslint-disable no-new */
+    new window.google.translate.TranslateElement({pageLanguage: 'pt', layout: window.google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element')
+  }
+   useEffect(()=>{window.googleTranslateElementInit = googleTranslateElementInit()})
   return (
+    <div>
+    <script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' />
+    <div id="google_translate_element"></div>
+    <div className="googlecover"></div>
     <Navbar bg="white" expand="lg">
       <Navbar.Brand href="#home">
         <img
@@ -44,24 +52,34 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#home">
-            <Link to="/Home" className="navlink">Home</Link>   
+            <Link to="/Home" className="navlink">
+              Home
+            </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/application" className="navlink">Repayment Track</Link>
+            <Link to="/application" className="navlink">
+              Repayment Track
+            </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/Gallery" className="navlink">Gallery </Link>
+            <Link to="/Gallery" className="navlink">
+              Gallery{" "}
+            </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/DonationPayment" className="navlink">Donation</Link>
+            <Link to="/DonationPayment" className="navlink">
+              Donation
+            </Link>
           </Nav.Link>
           <Nav.Link href="#link">
             {" "}
-            <Link to="/blog" className="navlink">Success Stories</Link>
+            <Link to="/blog" className="navlink">
+              Success Stories
+            </Link>
           </Nav.Link>
           {user ? (
             <button
-              class="btn btn_order shadow_btn"
+              className="btn btn_order shadow_btn"
               type="submit"
               onClick={ApplyLoan}
             >
@@ -88,6 +106,7 @@ const Header = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+    </div>
   );
 };
 export default Header;

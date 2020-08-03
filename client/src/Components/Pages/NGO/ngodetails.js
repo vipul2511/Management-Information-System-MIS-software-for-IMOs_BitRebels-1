@@ -88,11 +88,10 @@ if(!this.state.literacyLevel){
       this.setState(initial);
       let newData = this.state.newObj
       localStorage.setItem('finalNGO',JSON.stringify(finalData));
-      const Data = firebase.database().ref('users/').child('Application/'+this.state.AuthID).set({finalData}).then(success =>{
+      const Data = firebase.database().ref('users/').child('NGOData/'+this.state.AuthID).set({finalData}).then(success =>{
         window.location.href="/FinalView";
       });
-      console.log(Data);
-      
+      console.log(Data);  
     }
   };
   componentDidMount(){
