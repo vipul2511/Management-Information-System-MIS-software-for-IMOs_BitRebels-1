@@ -12,24 +12,7 @@ class Footer extends Component{
     render(){
         return(
         
-        //     <div className="footerBottom">
-         
-               
-        //  <div className="CopyRights">Copyright © {this.state.year} - All Rights Reserved - Official Website of Rashtriya Mahila Kosh, Ministry of Women and Child Development, Government of India</div>
-           
-        //      <div className="footerItemsr">
-                         
-        //                         <ul>
-        //                             <li><Link to="/Home">Home</Link></li>
-        //                             <li><Link to="/Repayment">Repayment Tracker</Link></li>
-        //                             <li><Link to="/gallery">Gallery</Link></li>
-        //                             <li><Link to="/Blog">Blog</Link></li>
-        //                             <li><Link to="/About">About Us</Link></li>
-        //                         </ul>
-        //                     </div>
-        //                     <br style={{clear:"both"}} />
-                                                      
-        //     </div>
+      
         <div className="footer-bottom">
         <div className="container">
             <div className="row">
@@ -42,11 +25,11 @@ class Footer extends Component{
                 <div className="col-xs-12 col-md-7" >
                     <div className="footer-menu">
                         <ul>
-                            <li><Link to="/a">Home</Link></li>
-                            <li><Link to="/b">Repayment Track</Link></li>
-                            <li><Link to="/c">Gallery</Link></li>
-                            <li><Link to="/d">Contacts Us</Link></li>
-                            <li><Link to="/e">Blog</Link></li>
+                            <li><Link to="/Home">Home</Link></li>
+                            <li><Link to="/application">Repayment Track</Link></li>
+                            <li><Link to="/Gallery">Gallery</Link></li>
+                            <li><Link to="/DonationPayment">Donation</Link></li>
+                            <li><Link to="/blog">Success Stories</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -55,6 +55,8 @@ class Application extends Component {
                         <form>
                             <input type="number" className="input-box" onChange={this.handleChange}  name="ApplicationID" placeholder="APPLICATION ID" />
                             <input type="number" className="input-box" onChange={this.handleChange}  name="PhoneNumber" placeholder="ENTER YOUR MOBILE NUMBER" />
+                            <br></br>
+                            <br></br>
                             <h2><button type="button" onClick={this.TrackApp} className=" btn button1">TRACK APPLICATION</button></h2>
                            
                         </form>

@@ -49,20 +49,20 @@ export const secondaryListItems = (
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-    <Link to="/CurrentMonth"><ListItemText primary="Current month" /> </Link> 
+    <Link to="/CurrentMonth"><ListItemText primary="Current month" style={{ color: 'black' }}/> </Link> 
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-     <Link  to="/LastQuarter" ><ListItemText primary="Last quarter" /></Link>
+     <Link  to="/LastQuarter" ><ListItemText primary="Last quarter" style={{ color: 'black' }}/></Link>
 
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <Link  to="/YearEndSale" ><ListItemText primary="Year-end sale" /></Link>
+      <Link  to="/YearEndSale" ><ListItemText primary="Year-end sale" style={{ color: 'black' }}/></Link>
     </ListItem>
   </div>
 );
