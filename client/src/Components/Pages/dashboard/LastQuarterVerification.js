@@ -2,25 +2,27 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import { Table } from "react-bootstrap";
-import "./verification.css";
+import "./LastQuarterVerification.css";
 import firebase from '../../../firebase SDK/firebase';
 
 import Header from '../../header/Header';
 import Footer from '../Footer';
-class AdminVerified extends Component {
+class LastQuarterVerification extends Component {
   constructor(props){
     super(props);
    this.state={
       userData:[]
     }
   }
+   
   componentDidMount(){
     firebase.database().ref('users/Application/').once("value",function(snapshot){
       let Data=[];
       snapshot.forEach(function(snapshot1) {
         console.log(snapshot1.val()); 
         Data.push(snapshot1.val());
-    }); 
+    });
+     
       this.setState({userData:Data});
     }.bind(this));
     
@@ -53,7 +55,7 @@ class AdminVerified extends Component {
             <th>PANCard No.</th>
             <th>Account No.</th>
             <th>Loan Amount</th>
-            <th>More Information</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -68,7 +70,7 @@ class AdminVerified extends Component {
                <td>{item.finalData.PANCard}</td>
                <td>{item.finalData.Account}</td>
                <td>{item.finalData.Amount}</td>
-               <td><Button onClick={this.moreDetails}>More Details</Button></td>
+               <td></td>
              </tr>
            );
          })}
@@ -79,4 +81,4 @@ class AdminVerified extends Component {
   }
 }
 
-export default AdminVerified;
+export default LastQuarterVerification;

@@ -1,0 +1,62 @@
+.Tables_style{
+  margin-top: 12vh;
+  width: 110%;
+  margin-left: 3.5vh;
+  box-shadow: 0 0 58px 0 rgba(0,0,0,0.3);
+}
+::placeholder {
+  color: rgb(150, 168, 201);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(150, 168, 201);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(150, 168, 201);
+}
+
+
+.inputs {
+  margin-left: 40%;
+  margin-top: 2vh;
+  border: 2px solid rgb(236, 239, 244);
+  border-radius: 5px;
+  outline: none;
+  font-family: sans-serif;
+  padding: 5px;
+  padding-left: 39px;
+  background-color: transparent;
+  position: relative;
+  transition: 1s;
+}
+.inputs:focus {
+  border: 2px solid dodgerblue;
+}
+
+.Button {
+  font-weight: bold;
+  width: 209px;
+  margin-left: 40%;
+  margin-top: 2vh;
+  font-family: sans-serif;
+  transition: 1s;
+}
+.Button:hover {
+  background-color: seagreen;
+}
+
+
+th{
+  text-align: center; 
+  color: rgb(80, 89, 123);
+  font-weight: bold;
+}
+td{
+  text-align: center; 
+  color: rgb(150, 168, 201);
+  font-weight: bold;
+}

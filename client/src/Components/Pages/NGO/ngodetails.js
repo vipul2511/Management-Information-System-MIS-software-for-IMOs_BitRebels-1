@@ -88,11 +88,10 @@ if(!this.state.literacyLevel){
       this.setState(initial);
       let newData = this.state.newObj
       localStorage.setItem('finalNGO',JSON.stringify(finalData));
-      const Data = firebase.database().ref('users/').child('Application/'+this.state.AuthID).set({finalData}).then(success =>{
+      const Data = firebase.database().ref('users/').child('NGOData/'+this.state.AuthID).set({finalData}).then(success =>{
         window.location.href="/FinalView";
       });
-      console.log(Data);
-      
+      console.log(Data);  
     }
   };
   componentDidMount(){
@@ -127,7 +126,7 @@ if(!this.state.literacyLevel){
         <Row>
           <Col md={12}>
             <div className="sec2 sec4">
-              <h1>Fill Applicant Details About Loan </h1>
+              <h1>Fill Applicant Details For Loan </h1>
               <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
               <div className="error" style={{marginTop:'3vh'}}>{this.state.IncomeError}</div>

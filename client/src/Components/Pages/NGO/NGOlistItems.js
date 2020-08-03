@@ -33,6 +33,12 @@ export const mainListItems = (
       </ListItemIcon>
     <Link to="/Repay"> <ListItemText  primary="Verification of Loan" style={{color:'black'}}/>  </Link> 
     </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+      <VerifiedUserIcon />
+      </ListItemIcon>
+      <Link to="/NGOAdmin"><ListItemText primary="NGO Application" style={{color:'black'}} /></Link>
+    </ListItem>
   </div>
 );
 
@@ -43,7 +49,7 @@ export const secondaryListItems = (
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+     <Link to="/CurrentMonth"> <ListItemText primary="Current month" style={{color:'black'}} /> </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
