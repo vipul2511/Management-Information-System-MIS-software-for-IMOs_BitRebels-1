@@ -118,7 +118,7 @@ class NGOloan extends Component {
         <Row>
           <Col md={12}>
             <div className="sec2">
-              <h1>Fill Your Details</h1>
+              <h1>Applicant Details</h1>
               <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
               <div className="error" style={{marginTop:'3vh'}}>{this.state.accountError}</div>

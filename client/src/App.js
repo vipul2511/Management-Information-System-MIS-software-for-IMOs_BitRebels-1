@@ -49,6 +49,8 @@ import NGO from './Components/Pages/NGO/ngo';
 import NGOdetails from './Components/Pages/NGO/ngodetails';
 import NGOloan from './Components/Pages/NGO/ngoloan';
 import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin'
+import NGOApplication from './Components/Pages/NGO/NGOApplication'
+import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
 
 function App() {
   return (
@@ -58,8 +60,8 @@ function App() {
     <Route path="/Ngodetails" component={NGOdetails} />
     <Route path="/Ngoloan" component={NGOloan} />
       <Route path="/NGORepayAdmin" component={NGORepayAdmin} />
-
-
+      <Route path="/NGOApplication" component={NGOApplication} />
+      <Route path="/NGOFinalprint" component={NGOFinalprint}/>
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
       <Route path="/firebase" component={FirebaseTest}/>

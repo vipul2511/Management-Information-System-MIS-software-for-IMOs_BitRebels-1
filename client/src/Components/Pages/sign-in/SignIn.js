@@ -24,7 +24,6 @@ const uiConfig = {
   signInOptions: [
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-    defaultCountry:'+91'
   ]
 };
 
