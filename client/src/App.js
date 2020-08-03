@@ -50,11 +50,14 @@ import NGOloan from './Components/Pages/NGO/ngoloan';
 import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin'
 import NGOApplication from './Components/Pages/NGO/NGOApplication'
 import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
-
+import LastQuarter from './Components/Pages/dashboard/LastQuarter';
+import LastQuarterVerification from './Components/Pages/dashboard/LastQuarterVerification';
 function App() {
   return (
     <BrowserRouter>
     <Switch>
+    <Route path="/LastQuarterVerification" component={LastQuarterVerification} />
+    <Route path="/LastQuarter" component={LastQuarter} />
     <Route path="/Ngo" component={NGO} />
     <Route path="/Ngodetails" component={NGOdetails} />
     <Route path="/Ngoloan" component={NGOloan} />
@@ -100,7 +103,6 @@ function App() {
        <Route path="/Gallery" component={Gallery}></Route>
        <Route path="/FinalView" component={FinalView}></Route>
        <Route exact path="/AdminSignIn" component={AdminSignIn} />
-       {/* <Route  path="/Dashboard" component={Dashboard} /> */}
        <ProtectedRoute exact path="/Dashboard" component={Dashboard} />
         <Route path="*" component={() => "404 NOT FOUND"} />
         </Switch>
