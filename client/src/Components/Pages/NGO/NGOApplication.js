@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './NGOApplication.css';
 import firebase from '../../../firebase SDK/firebase';
-import Ngoheader from '../../Ngoheader/Ngoheader';
+import Ngoheader from '../../Ngoheader/Ngoheader2';
 class NGOApplication extends Component {
     state = {
         Num: [],

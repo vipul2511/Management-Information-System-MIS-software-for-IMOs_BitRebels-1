@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./ngo.css";
 import { Validator } from 'format-utils';
 import firebase from '../../../firebase SDK/firebase';
-import Header from '../../header/Header';
+import Ngoheader from '../../Ngoheader/Ngoheader';
 
 const initial = {
   account: "",
@@ -111,7 +111,7 @@ class NGOloan extends Component {
   render() {
     return (
       <div className="loanTp">
-      <Header />
+      <Ngoheader />
       <Container fluid  style={{height:'110vh',backgroundColor:'rgb(242, 246, 250)'}} >
         <Row>
           <Col md={12}>

@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { Container, Row, Col } from "react-bootstrap";
 import "./ngo.css";
 import firebase from '../../../firebase SDK/firebase';
-import Header from '../../header/Header';
+import Ngoheader from '../../Ngoheader/Ngoheader';
 
 const initial = {
   Income:"",
@@ -121,7 +121,7 @@ if(!this.state.literacyLevel){
   render() {
     return (
       <div>
-      <Header />
+      <Ngoheader />
       <Container fluid className="headss">
         <Row>
           <Col md={12}>
