@@ -6,6 +6,8 @@ import "./ngo.css";
 import firebase from '../../../firebase SDK/firebase';
 import Header from '../../header/Header';
 import moment from 'moment';
+import Ngoheader from '../../Ngoheader/Ngoheader';
+
 const initial = {
   Income:"",
   literacyLevel:"", 
@@ -128,12 +130,12 @@ if(!this.state.literacyLevel){
   render() {
     return (
       <div>
-      <Header />
+      <Ngoheader />
       <Container fluid className="headss">
         <Row>
           <Col md={12}>
             <div className="sec2 sec4">
-              <h1>Fill Applicant Details About Loan </h1>
+              <h1>Fill Applicant Details For Loan </h1>
               <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
               <div className="error" style={{marginTop:'3vh'}}>{this.state.IncomeError}</div>

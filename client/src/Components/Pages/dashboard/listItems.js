@@ -55,13 +55,14 @@ export const secondaryListItems = (
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Last quarter" />
+     <Link  to="/LastQuarter" ><ListItemText primary="Last quarter" /></Link>
+
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <Link  to="/YearEndSale" ><ListItemText primary="Year-end sale" /></Link>
     </ListItem>
   </div>
 );

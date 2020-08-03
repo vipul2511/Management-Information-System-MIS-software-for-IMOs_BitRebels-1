@@ -30,14 +30,14 @@
   margin-top: -4px;
   width: 20vh;
 }
-button.btn1 {
+button.btn12 {
   height: 6vh;
   width: 20vh;
   background: #3abaf1;
   color: #ffffff;
   border-color: #3abaf1;
   margin-top: 0px;
-  margin-left: 5vh;
+  margin-left: 65vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   border-radius: 100;
@@ -48,10 +48,10 @@ button.btn1 {
   font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
-button.btn1:hover,
-button.btn1:active,
-button.btn1:focus,
-button.btn1.active {
+button.btn12:hover,
+button.btn12:active,
+button.btn12:focus,
+button.btn12.active {
   color: #3abaf1;
   background-color: #ffffff;
   border-color: #3abaf1;
@@ -86,7 +86,7 @@ button.btn_order.active {
   background-color: #ffffff;
   border-color: #ff9001;
 }
-.navlink{
+.navlink {
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
@@ -94,12 +94,12 @@ button.btn_order.active {
   float: left;
   width: 10vh;
 }
-.navlink:hover{
+.navlink:hover {
   text-decoration: none;
   color: #ff9001;
 }
 
-.navlink1{
+.navlink1 {
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
@@ -107,12 +107,11 @@ button.btn_order.active {
   float: left;
   width: 23vh;
 }
-.navlink1:hover{
+.navlink1:hover {
   text-decoration: none;
-  color:
-   #ff9001;
+  color: #ff9001;
 }
-.navlink2{
+.navlink2 {
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
@@ -120,12 +119,11 @@ button.btn_order.active {
   float: left;
   width: 12vh;
 }
-.navlink2:hover{
+.navlink2:hover {
   text-decoration: none;
-  color:
-   #ff9001;
+  color: #ff9001;
 }
-.navlink3{
+.navlink3 {
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
@@ -133,12 +131,11 @@ button.btn_order.active {
   float: left;
   width: 13vh;
 }
-.navlink3:hover{
+.navlink3:hover {
   text-decoration: none;
-  color:
-   #ff9001;
+  color: #ff9001;
 }
-.navlink4{
+.navlink4 {
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
@@ -146,12 +143,11 @@ button.btn_order.active {
   float: left;
   width: 22vh;
 }
-.navlink4:hover{
+.navlink4:hover {
   text-decoration: none;
-  color:
-   #ff9001;
+  color: #ff9001;
 }
-.navlink5{
+.navlink5 {
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
@@ -159,10 +155,9 @@ button.btn_order.active {
   float: left;
   width: 13vh;
 }
-.navlink5:hover{
+.navlink5:hover {
   text-decoration: none;
-  color:
-   #ff9001;
+  color: #ff9001;
 }
 
 @media screen and (max-width: 360px) {
