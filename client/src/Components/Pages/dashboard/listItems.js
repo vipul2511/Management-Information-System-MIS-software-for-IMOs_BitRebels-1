@@ -4,9 +4,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import InsertPhotoIcon from '@material-ui/icons/InsertPhoto';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
@@ -50,13 +47,6 @@ export const secondaryListItems = (
         <AssignmentIcon />
       </ListItemIcon>
     <Link to="/CurrentMonth"><ListItemText primary="Current month" style={{ color: 'black' }}/> </Link> 
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-     <Link  to="/LastQuarter" ><ListItemText primary="Last quarter" style={{ color: 'black' }}/></Link>
-
     </ListItem>
     <ListItem button>
       <ListItemIcon>

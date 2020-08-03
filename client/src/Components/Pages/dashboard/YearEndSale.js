@@ -20,7 +20,7 @@ import Badge from '@material-ui/core/Badge';
 import Card from "react-bootstrap/Card";
 import Pic from "./profile.jpeg";
 import { Table } from "react-bootstrap";
-import "./LastQuarterVerification.css";
+import "./RepayAdmin.css";
 import YearEndSaleVerify from './YearEndSaleVerify';
 
 const drawerWidth = 240;
