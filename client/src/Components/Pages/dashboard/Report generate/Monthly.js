@@ -4,30 +4,30 @@ import Button from "react-bootstrap/Button";
 import { Table } from "react-bootstrap";
 import "./verification.css";
 import firebase from '../../../../firebase SDK/firebase';
+import moment from 'moment';
 
 class MonthlyReport extends Component {
   constructor(props){
     super(props);
    this.state={
-      userData:[]
+      userData:[],
+      userItem:[]
     }
   }
   componentDidMount(){
-    firebase.database().ref('users/Application/').once("value",function(snapshot){
-      let Data=[];
-      snapshot.forEach(function(snapshot1) {
-        console.log(snapshot1.val()); 
-        Data.push(snapshot1.val());
-    });
-     
-      this.setState({userData:Data});
+    const now = moment();
+    const month=now.format('M');
+    console.log(month);
+    firebase.database().ref('users/Data/'+month).once("child_added",function(snapshot){
+      console.log(snapshot.val());
+      let item=this.state.userData;
+        item.push(snapshot.val());
+        this.setState({userData:item});
     }.bind(this));
-    
     console.log(this.state.userData);
   }
-
   check=()=>{
-    console.log(this.state.userData);
+    console.log(this.state.userData)
   }
    selectOnlyThis=(id)=> {
     var myCheckbox = document.getElementsByName("myCheckbox");
@@ -56,31 +56,21 @@ class MonthlyReport extends Component {
           </tr>
         </thead>
         <tbody>
+        {this.state.userItem.map(item=>{
+          return(
+        <tr  style={{width:'100px',height:'100px'}}>
+          <td>{item.dummyData.AppID}</td>
+          <td>{item.dummyData.Name}</td>
+          <td>{item.dummyData.stateName}</td>
+          <td>{item.dummyData.AadhaarCard}</td>
+          <td>{item.dummyData.PANCard}</td>
+          <td>{item.dummyData.Account}</td>
+          <td>{item.dummyData.Amount}</td>
+          <td style={{color:'green'}}>Approved</td>
+        </tr>
+          );
+    })}
 
-         {this.state.userData.map((item,i)=>{
-           return(
-             <tr key={i} style={{width:'100px',height:'100px'}}>
-               <td>{item.finalData.AppID}</td>
-               <td>{item.finalData.Name}</td>
-               <td>{item.finalData.stateName}</td>
-               <td>{item.finalData.AadhaarCard}</td>
-               <td>{item.finalData.PANCard}</td>
-               <td>{item.finalData.Account}</td>
-               <td>{item.finalData.Amount}</td>
-               <td style={{color:'green'}}>Approved</td>
-             </tr>
-           );
-         })}
-         <tr style={{width:'100px',height:'100px'}}>
-               <td>45421</td>
-               <td>Vipul Shrimali</td>
-               <td>Delhi</td>
-               <td>3445678910</td>
-               <td>PIBS3210S</td>
-               <td>245178452</td>
-               <td>40000</td>
-               <td style={{color:'Yellow'}}>Pending</td>
-             </tr>
         </tbody>
       </Table>
       </div>

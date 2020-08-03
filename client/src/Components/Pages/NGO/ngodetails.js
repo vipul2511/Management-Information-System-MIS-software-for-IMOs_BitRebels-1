@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import { Container, Row, Col } from "react-bootstrap";
 import "./ngo.css";
 import firebase from '../../../firebase SDK/firebase';
+import Header from '../../header/Header';
+import moment from 'moment';
 import Ngoheader from '../../Ngoheader/Ngoheader';
 
 const initial = {
@@ -86,11 +88,18 @@ if(!this.state.literacyLevel){
     if (isValid) {
       console.log(this.state);
       this.setState(initial);
-      let newData = this.state.newObj
+      let newData = this.state.newObj;
+      const now = moment();
+      const dateFormatted = now.format('M');
+      const year=now.format('yyyy');
       localStorage.setItem('finalNGO',JSON.stringify(finalData));
       const Data = firebase.database().ref('users/').child('NGOData/'+this.state.AuthID).set({finalData}).then(success =>{
-        window.location.href="/FinalView";
+       firebase.database().ref('users/').child('Data/'+dateFormatted).push({finalData}).then(succ=>{
+        firebase.database().ref('users/').child('Data/'+year).push({finalData}).then(succ=>{
+        window.location.href="/FinalNGO";
+       });
       });
+    });
       console.log(Data);  
     }
   };
