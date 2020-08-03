@@ -53,10 +53,14 @@ import NGOApplication from './Components/Pages/NGO/NGOApplication'
 import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
 import LastQuarter from './Components/Pages/dashboard/LastQuarter';
 import LastQuarterVerification from './Components/Pages/dashboard/LastQuarterVerification';
+import YearEndSale from './Components/Pages/dashboard/YearEndSale';
+import YearEndSaleVerify from './Components/Pages/dashboard/YearEndSaleVerify';
 function App() {
   return (
     <BrowserRouter>
     <Switch>
+    <Route path="/YearEndSaleVerify" component={YearEndSaleVerify} />
+    <Route path="/YearEndSale" component={YearEndSale} />
     <Route path="/LastQuarterVerification" component={LastQuarterVerification} />
     <Route path="/LastQuarter" component={LastQuarter} />
     <Route path="/Ngo" component={NGO} />
