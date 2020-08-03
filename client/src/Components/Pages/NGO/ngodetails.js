@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./ngo.css";
 import firebase from '../../../firebase SDK/firebase';
 import Header from '../../header/Header';
-
+import moment from 'moment';
 const initial = {
   Income:"",
   literacyLevel:"", 
@@ -86,10 +86,14 @@ if(!this.state.literacyLevel){
     if (isValid) {
       console.log(this.state);
       this.setState(initial);
-      let newData = this.state.newObj
+      let newData = this.state.newObj;
+      const now = moment();
+      const dateFormatted = now.format('DDMYYYY');
       localStorage.setItem('finalNGO',JSON.stringify(finalData));
       const Data = firebase.database().ref('users/').child('NGOData/'+this.state.AuthID).set({finalData}).then(success =>{
+       firebase.database().ref('users/').child('Data/'+dateFormatted).push({finalData}).then(succ=>{
         window.location.href="/FinalView";
+       });
       });
       console.log(Data);  
     }

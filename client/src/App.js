@@ -51,7 +51,6 @@ import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin';
 import CurrentReport from './Components/Pages/dashboard/Report generate/Report';
 import NGOApplication from './Components/Pages/NGO/NGOApplication'
 import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
-
 function App() {
   return (
     <BrowserRouter>
