@@ -126,7 +126,7 @@ if(!this.state.literacyLevel){
         <Row>
           <Col md={12}>
             <div className="sec2 sec4">
-              <h1>Fill Your Details About Loan </h1>
+              <h1>Fill Applicant Details About Loan </h1>
               <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
               <div className="error" style={{marginTop:'3vh'}}>{this.state.IncomeError}</div>

@@ -128,7 +128,7 @@ function NGORepayAdmin() {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            NGO Dashboard
+            NGO Application
           </Typography>
           <IconButton color="inherit">
           </IconButton>

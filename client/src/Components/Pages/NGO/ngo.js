@@ -149,7 +149,7 @@ alert("Not working");
       <Container fluid className="headss top_mar">
         <Row className="col">
             <div className="sec">
-              <h1>Apply For Your Loan</h1>
+              <h1>Applicant Form</h1>
               <h3 className="h3head">For Loan analysis </h3>
               <hr></hr>
             <div style={{position:'absolute',marginLeft:'95vh'}}>

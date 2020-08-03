@@ -35,7 +35,7 @@ button.btn1 {
   background: #3abaf1;
   color: #ffffff;
   border-color: #3abaf1;
-  margin-top: 4px;
+  margin-top: 0px;
   margin-left: 5vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -64,7 +64,7 @@ button.btn_order {
   background: #ff9001;
   color: #ffffff;
   border-color: #ff9001;
-  margin-top: 4px;
+  margin-top: 0px;
   margin-left: 44vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -75,6 +75,7 @@ button.btn_order {
   font-size: 18px;
   font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  z-index: 2;
 }
 button.btn_order:hover,
 button.btn_order:active,
@@ -96,13 +97,28 @@ button.btn_order.active {
   text-decoration: none;
   color: #ff9001;
 }
+#google_translate_element{
+  left: 111vh;
+  position: absolute;
+  z-index: 1;
+  top: 4.2vh;
+}
+.googlecover{
+  background-color: white;
+  height: 4vh;
+  width: 22.3vh;
+  top: 4.2vh;
+  left: 133vh;
+  z-index: 2;
+  position: absolute;
+}
 @media screen and (max-width: 360px) {
   button.btn_order {
     height: 6vh;
     background: #ff9001;
     color: #ffffff;
     border-color: #ff9001;
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 0vh;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
