@@ -5,7 +5,7 @@ import Img from './download.png'
 import { Container, Row,Col } from "react-bootstrap";
 import "./ngo.css";
 import firebase from '../../../firebase SDK/firebase';
-import Header from '../../header/Header';
+import Ngoheader from '../../Ngoheader/Ngoheader';
 
 import { Validator } from 'format-utils';
 const initial = {
@@ -144,7 +144,7 @@ alert("Not working");
   render() {
     return (
       <div >
-      <Header  />
+     <Ngoheader />
       <div className="fullBox">
       <Container fluid className="headss top_mar">
         <Row className="col">
