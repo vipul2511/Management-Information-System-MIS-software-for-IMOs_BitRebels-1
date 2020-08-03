@@ -10,7 +10,7 @@ import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import InsertPhotoIcon from '@material-ui/icons/InsertPhoto';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const mainListItems = (
   <div>
@@ -18,20 +18,26 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <Link to="/Dashboard" ><ListItemText  primary="Dashboard"  style={{color:'black'}}/></Link> 
+      <Link to="/Dashboard" ><ListItemText primary="Dashboard" style={{ color: 'black' }} /></Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <InsertPhotoIcon/>
+        <InsertPhotoIcon />
       </ListItemIcon>
-      <Link to="/AdminGallery"><ListItemText primary="Gallery" style={{color:'black'}} /></Link>
+      <Link to="/AdminGallery"><ListItemText primary="Gallery" style={{ color: 'black' }} /></Link>
     </ListItem>
-   
+
     <ListItem button>
       <ListItemIcon>
         <VerifiedUserIcon />
       </ListItemIcon>
-    <Link to="/Repay"> <ListItemText  primary="Verification of Loan" style={{color:'black'}}/>  </Link> 
+      <Link to="/Repay"> <ListItemText primary="Verification of Loan" style={{ color: 'black' }} />  </Link>
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <VerifiedUserIcon />
+      </ListItemIcon>
+      <Link to="/NGOAdmin"><ListItemText primary="NGO Application" style={{ color: 'black' }} /></Link>
     </ListItem>
   </div>
 );
@@ -43,7 +49,7 @@ export const secondaryListItems = (
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+    <Link to="/CurrentMonth"><ListItemText primary="Current month" /> </Link> 
     </ListItem>
     <ListItem button>
       <ListItemIcon>

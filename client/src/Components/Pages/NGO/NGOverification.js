@@ -14,22 +14,17 @@ class AdminVerified extends Component {
       userData:[]
     }
   }
-   
   componentDidMount(){
-    firebase.database().ref('users/Application/').once("value",function(snapshot){
+    firebase.database().ref('users/NGOData/').once("value",function(snapshot){
       let Data=[];
       snapshot.forEach(function(snapshot1) {
         console.log(snapshot1.val()); 
         Data.push(snapshot1.val());
     });
-      // let Data=[];
-      // Data.push(snap.val());
       this.setState({userData:Data});
     }.bind(this));
-    
     console.log(this.state.userData);
   }
-
   check=()=>{
     console.log(this.state.userData);
   }

@@ -73,7 +73,6 @@ htmltopdf(){
         <b style={{fontSize:'25px'}}> Loan Details by NGO</b>
         <button className="btn prt_btn" onClick={this.abdhdID}>PRINT</button> 
      </div>
-     
      </div>
           <table border="1" className="tableID">
           <tbody>
@@ -82,14 +81,16 @@ htmltopdf(){
                   <b>Application Number</b>
                  </td>
                  <td><h6>{this.state.Application}</h6></td>
-                 <td>
-                     <b>Employment Type</b>
-                 </td>
-                 <td><h6>{this.state.Empo}</h6></td>
+                 <td><b>NGO Name</b></td>
+                 <td><h6></h6></td>
               </tr>
               <tr>
                   <td><b>Name</b></td>
-                  <td colSpan="3"><h6>{this.state.Name}</h6></td>
+                  <td><h6>{this.state.Name}</h6></td>
+                  <td>
+                     <b>Employment Type</b>
+                 </td>
+                 <td><h6>{this.state.Empo}</h6></td>
               </tr>
               <tr>
                  <td><b>Email-ID </b></td>

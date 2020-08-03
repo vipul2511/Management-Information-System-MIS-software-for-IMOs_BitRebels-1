@@ -47,13 +47,15 @@ import AdminSignIn from './Components/Pages/dashboard/Sign/SignIn';
 import NGO from './Components/Pages/NGO/ngo';
 import NGOdetails from './Components/Pages/NGO/ngodetails';
 import NGOloan from './Components/Pages/NGO/ngoloan';
-import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin'
+import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin';
+import CurrentReport from './Components/Pages/dashboard/Report generate/Report';
 
 function App() {
   return (
     <BrowserRouter>
     <Switch>
     <Route path="/Ngo" component={NGO} />
+    <Route path="/CurrentMonth" component={CurrentReport} />
     <Route path="/Ngodetails" component={NGOdetails} />
     <Route path="/Ngoloan" component={NGOloan} />
       <Route path="/NGOAdmin" component={NGORepayAdmin} />
