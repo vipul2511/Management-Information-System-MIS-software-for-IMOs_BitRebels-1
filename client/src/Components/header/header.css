@@ -106,9 +106,9 @@ button.btn_order.active {
 .googlecover{
   background-color: white;
   height: 4vh;
-  width: 22.3vh;
+  width: 23vh;
   top: 4.2vh;
-  left: 133vh;
+  left: 132vh;
   z-index: 2;
   position: absolute;
 }

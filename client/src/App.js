@@ -49,7 +49,6 @@ import NGOdetails from './Components/Pages/NGO/ngodetails';
 import NGOloan from './Components/Pages/NGO/ngoloan';
 import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin';
 import CurrentReport from './Components/Pages/dashboard/Report generate/Report';
-import NGORepayAdmin from './Components/Pages/NGO/NGORepayAdmin'
 import NGOApplication from './Components/Pages/NGO/NGOApplication'
 import NGOFinalprint from './Components/Pages/NGO/NGOfinalprint'
 
@@ -62,6 +61,7 @@ function App() {
     <Route path="/Ngodetails" component={NGOdetails} />
     <Route path="/Ngoloan" component={NGOloan} />
       <Route path="/NGOAdmin" component={NGORepayAdmin} />
+      <Route path="/NGOApplication" component={NGOApplication} />
       <Route path="/FinalNGO" component={FinalNGO} />
       <Route exact path="/" component={Loading}/>
       <Route path="/Home" component={Home}/>
