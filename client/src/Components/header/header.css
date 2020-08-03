@@ -28,6 +28,7 @@
 .shadow_btn {
   font-weight: bold;
   margin-top: -4px;
+  width: 20vh;
 }
 button.btn1 {
   height: 6vh;
@@ -65,7 +66,7 @@ button.btn_order {
   color: #ffffff;
   border-color: #ff9001;
   margin-top: 0px;
-  margin-left: 44vh;
+  margin-left: 30vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   border-radius: 100;
@@ -97,14 +98,14 @@ button.btn_order.active {
   text-decoration: none;
   color: #ff9001;
 }
-<<<<<<< HEAD
+
 .navlink1{
   transition: 0.3s;
   height: 2vh;
   font-weight: bold;
   text-decoration: none;
   float: left;
-  width: 21vh;
+  width: 23vh;
 }
 .navlink1:hover{
   text-decoration: none;
@@ -117,7 +118,7 @@ button.btn_order.active {
   font-weight: bold;
   text-decoration: none;
   float: left;
-  width: 10vh;
+  width: 12vh;
 }
 .navlink2:hover{
   text-decoration: none;
@@ -130,7 +131,7 @@ button.btn_order.active {
   font-weight: bold;
   text-decoration: none;
   float: left;
-  width: 12vh;
+  width: 13vh;
 }
 .navlink3:hover{
   text-decoration: none;
@@ -143,29 +144,27 @@ button.btn_order.active {
   font-weight: bold;
   text-decoration: none;
   float: left;
-  width: 20vh;
+  width: 22vh;
 }
 .navlink4:hover{
   text-decoration: none;
   color:
    #ff9001;
-=======
-#google_translate_element{
-  left: 111vh;
-  position: absolute;
-  z-index: 1;
-  top: 4.2vh;
 }
-.googlecover{
-  background-color: white;
-  height: 4vh;
-  width: 23vh;
-  top: 4.2vh;
-  left: 132vh;
-  z-index: 2;
-  position: absolute;
->>>>>>> 73ccb66ab7cdc633bd58c88e3d7a08bb55043607
+.navlink5{
+  transition: 0.3s;
+  height: 2vh;
+  font-weight: bold;
+  text-decoration: none;
+  float: left;
+  width: 13vh;
 }
+.navlink5:hover{
+  text-decoration: none;
+  color:
+   #ff9001;
+}
+
 @media screen and (max-width: 360px) {
   button.btn_order {
     height: 6vh;

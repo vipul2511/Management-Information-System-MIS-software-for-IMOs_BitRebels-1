@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './NGOApplication.css';
-import Header from '../../header/Header';
 import firebase from '../../../firebase SDK/firebase';
+import Ngoheader from '../../Ngoheader/Ngoheader';
 class NGOApplication extends Component {
     state = {
         Num: [],
@@ -48,7 +48,7 @@ class NGOApplication extends Component {
         return (
             <div>
                 <div className="Main_contain">
-                    <Header />
+                    <Ngoheader />
                     <div className="form-container">
                         <h1>NGO Sign In</h1>
                         <p>For security reasons,please answer the fields below to<br /> fetch your applications.</p>

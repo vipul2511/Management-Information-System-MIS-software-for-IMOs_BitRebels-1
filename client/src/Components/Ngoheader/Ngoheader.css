@@ -1,0 +1,204 @@
+.topnav {
+    overflow: hidden;
+    float: right;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(105, 105, 105);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    text-decoration: none;
+    color: #3abaf1;
+  }
+  .stickys {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    margin: auto;
+    top: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .shadow_btn {
+    font-weight: bold;
+    margin-top: -4px;
+    width: 20vh;
+  }
+  button.btn1 {
+    height: 6vh;
+    width: 20vh;
+    background: #3abaf1;
+    color: #ffffff;
+    border-color: #3abaf1;
+    margin-top: 0px;
+    margin-left: 64vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 100;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+  button.btn1:hover,
+  button.btn1:active,
+  button.btn1:focus,
+  button.btn1.active {
+    color: #3abaf1;
+    background-color: #ffffff;
+    border-color: #3abaf1;
+  }
+  .img-logo {
+    width: 60px;
+    margin-left: 5vh;
+  }
+  button.btn_order {
+    height: 6vh;
+    background: #ff9001;
+    color: #ffffff;
+    border-color: #ff9001;
+    margin-top: 0px;
+    margin-left: 30vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 100;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    z-index: 2;
+  }
+  button.btn_order:hover,
+  button.btn_order:active,
+  button.btn_order:focus,
+  button.btn_order.active {
+    color: #ff9001;
+    background-color: #ffffff;
+    border-color: #ff9001;
+  }
+  .navlink{
+    transition: 0.3s;
+    height: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    width: 10vh;
+  }
+  .navlink:hover{
+    text-decoration: none;
+    color: #ff9001;
+  }
+  
+  .navlink1{
+    transition: 0.3s;
+    height: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    width: 23vh;
+  }
+  .navlink1:hover{
+    text-decoration: none;
+    color:
+     #ff9001;
+  }
+  .navlink2{
+    transition: 0.3s;
+    height: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    width: 12vh;
+  }
+  .navlink2:hover{
+    text-decoration: none;
+    color:
+     #ff9001;
+  }
+  .navlink3{
+    transition: 0.3s;
+    height: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    width: 13vh;
+  }
+  .navlink3:hover{
+    text-decoration: none;
+    color:
+     #ff9001;
+  }
+  .navlink4{
+    transition: 0.3s;
+    height: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    width: 22vh;
+  }
+  .navlink4:hover{
+    text-decoration: none;
+    color:
+     #ff9001;
+  }
+  .navlink5{
+    transition: 0.3s;
+    height: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    width: 13vh;
+  }
+  .navlink5:hover{
+    text-decoration: none;
+    color:
+     #ff9001;
+  }
+  
+  @media screen and (max-width: 360px) {
+    button.btn_order {
+      height: 6vh;
+      background: #ff9001;
+      color: #ffffff;
+      border-color: #ff9001;
+      margin-top: 3px;
+      margin-left: 0vh;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      border-radius: 100;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+    }
+    button.btn1 {
+      height: 6vh;
+      width: 52vh;
+      background: #3abaf1;
+      color: #ffffff;
+      border-color: #3abaf1;
+      margin-top: 4px;
+      margin-left: 0;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      border-radius: 100;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      font-family: "Lato", "Avenir W01", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+    }
+  }
